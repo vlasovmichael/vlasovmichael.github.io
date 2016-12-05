@@ -1,0 +1,275 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+```html
+<!-- `display: block` sprite -->
+<div class="icon-home"></div>
+
+<!-- `display: inline-block` sprite -->
+<img class="icon-home" />
+```
+*/
+.icon-add-file {
+  background-image: url(../img/sprite.png);
+  background-position: -174px -183px;
+  width: 20px;
+  height: 20px;
+}
+.icon-attention {
+  background-image: url(../img/sprite.png);
+  background-position: -1171px -1159px;
+  width: 30px;
+  height: 30px;
+}
+.icon-bold-text-h {
+  background-image: url(../img/sprite.png);
+  background-position: -1331px -1319px;
+  width: 30px;
+  height: 30px;
+}
+.icon-bold-text {
+  background-image: url(../img/sprite.png);
+  background-position: -1251px -1239px;
+  width: 30px;
+  height: 30px;
+}
+.icon-comment {
+  background-image: url(../img/sprite.png);
+  background-position: -474px -483px;
+  width: 21px;
+  height: 21px;
+}
+.icon-commission {
+  background-image: url(../img/sprite.png);
+  background-position: -1452px -1440px;
+  width: 31px;
+  height: 31px;
+}
+.icon-deals {
+  background-image: url(../img/sprite.png);
+  background-position: -653px -642px;
+  width: 28px;
+  height: 27px;
+}
+.icon-fb {
+  background-image: url(../img/sprite.png);
+  background-position: -62px -71px;
+  width: 16px;
+  height: 16px;
+}
+.icon-file-close {
+  background-image: url(../img/sprite.png);
+  background-position: -204px -213px;
+  width: 20px;
+  height: 20px;
+}
+.icon-forum-add {
+  background-image: url(../img/sprite.png);
+  background-position: -234px -243px;
+  width: 20px;
+  height: 20px;
+}
+.icon-forum-search {
+  background-image: url(../img/sprite.png);
+  background-position: -1493px -1481px;
+  width: 40px;
+  height: 40px;
+}
+.icon-head-yel-arrow-hover {
+  background-image: url(../img/sprite.png);
+  background-position: 0px 0px;
+  width: 8px;
+  height: 13px;
+}
+.icon-head-yel-arrow {
+  background-image: url(../img/sprite.png);
+  background-position: -18px -23px;
+  width: 8px;
+  height: 13px;
+}
+.icon-i {
+  background-image: url(../img/sprite.png);
+  background-position: -691px -679px;
+  width: 30px;
+  height: 30px;
+}
+.icon-insta {
+  background-image: url(../img/sprite.png);
+  background-position: -88px -97px;
+  width: 16px;
+  height: 16px;
+}
+.icon-invalid-text {
+  background-image: url(../img/sprite.png);
+  background-position: -414px -423px;
+  width: 20px;
+  height: 20px;
+}
+.icon-italic-text-h {
+  background-image: url(../img/sprite.png);
+  background-position: -731px -719px;
+  width: 30px;
+  height: 30px;
+}
+.icon-italic-text {
+  background-image: url(../img/sprite.png);
+  background-position: -971px -959px;
+  width: 30px;
+  height: 30px;
+}
+.icon-list-1-h {
+  background-image: url(../img/sprite.png);
+  background-position: -771px -759px;
+  width: 30px;
+  height: 30px;
+}
+.icon-list-1 {
+  background-image: url(../img/sprite.png);
+  background-position: -851px -839px;
+  width: 30px;
+  height: 30px;
+}
+.icon-list-2-h {
+  background-image: url(../img/sprite.png);
+  background-position: -1051px -1039px;
+  width: 30px;
+  height: 30px;
+}
+.icon-list-2 {
+  background-image: url(../img/sprite.png);
+  background-position: -1131px -1119px;
+  width: 30px;
+  height: 30px;
+}
+.icon-message {
+  background-image: url(../img/sprite.png);
+  background-position: -114px -123px;
+  width: 20px;
+  height: 20px;
+}
+.icon-modal-close {
+  background-image: url(../img/sprite.png);
+  background-position: -354px -363px;
+  width: 20px;
+  height: 20px;
+}
+.icon-news-arrow-left {
+  background-image: url(../img/sprite.png);
+  background-position: -505px -514px;
+  width: 30px;
+  height: 17px;
+}
+.icon-news-arrow-right {
+  background-image: url(../img/sprite.png);
+  background-position: -545px -541px;
+  width: 30px;
+  height: 17px;
+}
+.icon-no-app {
+  background-image: url(../img/sprite.png);
+  background-position: -811px -799px;
+  width: 30px;
+  height: 30px;
+}
+.icon-ok {
+  background-image: url(../img/sprite.png);
+  background-position: -264px -273px;
+  width: 20px;
+  height: 20px;
+}
+.icon-pagin-left-hover {
+  background-image: url(../img/sprite.png);
+  background-position: -891px -879px;
+  width: 30px;
+  height: 30px;
+}
+.icon-pagin-left {
+  background-image: url(../img/sprite.png);
+  background-position: -931px -919px;
+  width: 30px;
+  height: 30px;
+}
+.icon-pagin-right-hover {
+  background-image: url(../img/sprite.png);
+  background-position: -1371px -1359px;
+  width: 30px;
+  height: 30px;
+}
+.icon-pagin-right {
+  background-image: url(../img/sprite.png);
+  background-position: -1011px -999px;
+  width: 30px;
+  height: 30px;
+}
+.icon-quest {
+  background-image: url(../img/sprite.png);
+  background-position: -144px -153px;
+  width: 20px;
+  height: 20px;
+}
+.icon-round-arrows {
+  background-image: url(../img/sprite.png);
+  background-position: -384px -393px;
+  width: 20px;
+  height: 20px;
+}
+.icon-rub {
+  background-image: url(../img/sprite.png);
+  background-position: -585px -568px;
+  width: 21px;
+  height: 27px;
+}
+.icon-snapshot {
+  background-image: url(../img/sprite.png);
+  background-position: -324px -333px;
+  width: 20px;
+  height: 20px;
+}
+.icon-sum {
+  background-image: url(../img/sprite.png);
+  background-position: -1211px -1199px;
+  width: 30px;
+  height: 30px;
+}
+.icon-time-green {
+  background-image: url(../img/sprite.png);
+  background-position: -294px -303px;
+  width: 20px;
+  height: 20px;
+}
+.icon-time {
+  background-image: url(../img/sprite.png);
+  background-position: -1411px -1399px;
+  width: 31px;
+  height: 31px;
+}
+.icon-tw {
+  background-image: url(../img/sprite.png);
+  background-position: -36px -46px;
+  width: 16px;
+  height: 15px;
+}
+.icon-under-text-h {
+  background-image: url(../img/sprite.png);
+  background-position: -1291px -1279px;
+  width: 30px;
+  height: 30px;
+}
+.icon-under-text {
+  background-image: url(../img/sprite.png);
+  background-position: -1091px -1079px;
+  width: 30px;
+  height: 30px;
+}
+.icon-users {
+  background-image: url(../img/sprite.png);
+  background-position: -616px -605px;
+  width: 27px;
+  height: 27px;
+}
+.icon-videochat {
+  background-image: url(../img/sprite.png);
+  background-position: -444px -453px;
+  width: 20px;
+  height: 20px;
+}
