@@ -2797,6 +2797,7 @@ h2:before {
   float: left;
   width: 44%;
   position: relative;
+  direction: ltr;
 }
 
 .main-block__left .top-carousel img {
