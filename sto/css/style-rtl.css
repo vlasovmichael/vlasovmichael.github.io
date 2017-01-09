@@ -1,0 +1,76 @@
+body.rtl {
+  direction: rtl;
+}
+
+.rtl h2::before {
+  right: 0;
+}
+
+.rtl .header__right .list__item:last-child {
+  margin-right: 6px;
+  padding-right: 6px;
+  border-right: 1px solid #000;
+}
+
+.rtl .header__right .list__item:first-child {
+  border-right: none;
+  margin-right: 0;
+  padding-right: 0;
+}
+
+.rtl .main-block__left {
+  float: right;
+}
+
+.rtl .main-block__left .title__comments {
+  margin-right: 10px;
+}
+
+.rtl .main-block__left .filling__wrap--plus:before {
+  left: -60px;
+  right: auto;
+}
+
+.rtl .main-block__left .filling__wrap--plus:after {
+  left: -51px;
+  right: auto;
+}
+
+.rtl .main-block__right {
+  float: left;
+}
+
+.rtl .main-block__right .interview__title {
+  padding-right: 15px;
+}
+
+.rtl .main-block__right .filling__nav {
+  padding-right: 30px;
+  float: right;
+}
+
+.rtl .main-block__right .interview__nav--filling {
+  float: left;
+}
+
+.rtl .main-block .clinic-photos, .rtl .main-block .top-carousel, .rtl .main-block .main-block__popular {
+  direction: ltr;
+}
+
+.rtl .footer__right p:before {
+  top: 3px;
+}
+
+.rtl .jq-radio.checked .jq-radio__div {
+  margin-right: 3px;
+}
+
+.rtl .main-block__left .filling__content .services-prices .jq-checkbox.checked .jq-checkbox__div {
+  margin-right: 13px;
+}
+
+.rtl .select2-container .select2-selection--single .select2-selection__rendered {
+  padding-right: 40px;
+}
+
+/*# sourceMappingURL=../maps/style-rtl.css.map */
