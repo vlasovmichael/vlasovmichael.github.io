@@ -2568,10 +2568,7 @@ h2:before {
 
 .bread-crumbs__item {
   display: inline-block;
-  background-color: #0cabed;
-  border-radius: 5px;
-  -webkit-box-shadow: 0 1px 0 #008EC8;
-  box-shadow: 0 1px 0 #008EC8;
+  vertical-align: top;
   color: #FFF;
   font-weight: 300;
   padding: 0;
@@ -2580,18 +2577,19 @@ h2:before {
 }
 
 .bread-crumbs__item:last-child {
+  border-radius: 5px;
   -webkit-box-shadow: 0 1px 0 #008EC8;
   box-shadow: 0 1px 0 #008EC8;
   background-color: #0077AD;
   padding: 9.5px 11px;
 }
 
-.bread-crumbs__item:hover {
-  opacity: 0.7;
-}
-
 .bread-crumbs__item:hover:last-child {
   opacity: 1;
+}
+
+.bread-crumbs__subitem {
+  margin-top: 10px;
 }
 
 .bread-crumbs__item--arrow {
@@ -2605,14 +2603,23 @@ h2:before {
   -webkit-box-shadow: none;
   box-shadow: none;
   border-radius: 0;
+  margin-top: 12px;
 }
 
 .bread-crumbs__link {
+  background-color: #0cabed;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 1px 0 #008EC8;
+  box-shadow: 0 1px 0 #008EC8;
   color: #FFF;
   font-weight: 300;
   font-size: 17px;
   padding: 9px 11px;
   display: block;
+}
+
+.bread-crumbs__link:hover {
+  opacity: 0.7;
 }
 
 .bread-crumbs__link--home {
