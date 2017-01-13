@@ -4935,15 +4935,18 @@ h2:before {
   .main-block__right .interview__title span {
     display: none;
   }
-  .main-block__right .interview__bg {
-    display: none;
-  }
   .main-block__right .interview__item {
     width: 50%;
     float: left;
   }
   .main-block__right .interview__nav {
     width: 65%;
+  }
+  .main-block__right .interview__nav--result {
+    margin: 0 -10px 20px -10px;
+  }
+  .main-block__right .interview__nav--result .interview__item {
+    padding: 0 10px;
   }
   .main-block__right .interview__right {
     display: block;
