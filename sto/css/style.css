@@ -5099,10 +5099,13 @@ h2:before {
     font-size: 12px;
     padding: 0;
     color: #000;
+    background: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 0;
   }
   .bread-crumbs__item {
     background-color: transparent;
-    vertical-align: middle;
     -webkit-box-shadow: none;
     box-shadow: none;
     border-radius: 0;
@@ -5110,6 +5113,7 @@ h2:before {
   .bread-crumbs__item:last-child {
     padding: 0;
     color: #000;
+    border-radius: 0;
     background-color: transparent;
     font-size: 12px;
     -webkit-box-shadow: none;
@@ -5117,7 +5121,7 @@ h2:before {
     border-bottom: 1px solid #000;
   }
   .bread-crumbs__item--arrow {
-    margin: 0;
+    margin: 4px 0 0 0;
     background-image: url(../img/sprite.png);
     background-position: 0px 0px;
     width: 6px;
@@ -5212,6 +5216,10 @@ h2:before {
   }
   .main-block__left .clinic-list__item--add .clinic-list__bottom {
     width: 100%;
+  }
+  .main-block__left .filling__content {
+    -webkit-box-shadow: none;
+    box-shadow: none;
   }
   .main-block__contact {
     width: 100%;

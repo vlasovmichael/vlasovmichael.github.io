@@ -73,4 +73,8 @@ body.rtl {
   padding-right: 40px;
 }
 
+.rtl .select2-results__option {
+  text-align: right;
+}
+
 /*# sourceMappingURL=../maps/style-rtl.css.map */
