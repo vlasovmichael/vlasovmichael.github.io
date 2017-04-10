@@ -14,7 +14,7 @@ $(function(){
     $(".js-form-send").submit(function(e) {
         $.ajax({
             type: "POST",
-            url: "mail.php",
+            url: "php/mail.php",
             data: $(this).serialize()
         }).done(function() {
         $(this).find("input").val("");
@@ -29,7 +29,7 @@ $(function(){
     $(".js-click-form").submit(function(e) {
         $.ajax({
             type: "POST",
-            url: "mail2.php",
+            url: "php/mail2.php",
             data: $(this).serialize()
         }).done(function() {
         $(this).find("input").val("");
