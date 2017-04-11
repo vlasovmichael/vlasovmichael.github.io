@@ -21,9 +21,9 @@
 							<div class="header__city">
 								<select>
 									<option>Новосибирск</option>
-									<option>Новосибирск</option>
-									<option>Новосибирск</option>
-									<option>Новосибирск</option>
+									<option>короткий пункт</option>
+									<option>очень сильно длинное название города</option>
+									<option>Моска</option>
 									<option>Новосибирск</option>
 								</select>
 							</div>
@@ -43,10 +43,9 @@
 										<div class="search__item">
 											<select>
 												<option>Сертифицирование</option>
-												<option>Сертифицирование</option>
-												<option>Сертифицирование</option>
-												<option>Сертифицирование</option>
-												<option>Сертифицирование</option>
+												<option>короткий пункт</option>
+												<option>очень сильно длинное название города</option>
+												<option>Моска</option>
 												<option>Сертифицирование</option>
 											</select>
 										</div>
@@ -57,11 +56,21 @@
 								</form>
 							</div>
 							<div class="search__btn">
-								<a href="">Обратная связь</a>
+								<a class="fancy-popup" href="#success">Обратная связь</a>
+							</div>
+						</div>
+						<div class="header__mobile-btns">
+							<div class="header__mobile-adres"></div>
+							<div class="header__mobile-phone"></div>
+							<div class="header__mobile-menu">
+								<span></span>
+								<span></span>
+								<span></span>
 							</div>
 						</div>
 					</div>
 				</div>
+				<div id="place1"></div>
 			</div>
 		</header>
 		<!-- end header -->
@@ -70,6 +79,12 @@
 			<!-- begin nav -->
 			<nav class="nav">
 				<div class="wrapper">
+					<div class="nav__mobile-close">
+						<div class="nav__mobile-btn">
+							<span></span>
+							<span></span>
+						</div>
+					</div>
 					<ul class="nav__list">
 						<li class="nav__item dropdown"><a class="nav__link has-sub" href="">Сертифицирование</a>
 							<div class="dropdown-menu">
@@ -168,6 +183,7 @@
 				<ul class="top-slider__list js-top-slider__list">
 					<li class="top-slider__item">
 						<div class="top-slider__image"><img src="img/top-slider/top-slider-1.jpg" alt=""></div>
+						<div class="top-slider__mobile"><img src="img/top-slider/top-slider-mobile.jpg" alt=""></div>
 						<div class="top-slider__content">
 							<div class="top-slider__text">Разнообразный и богатый опыт <br> играет важную роль</div>
 							<div class="top-slider__btn"><a href="">Заказать</a></div>
@@ -176,6 +192,7 @@
 					<!-- 2 -->
 					<li class="top-slider__item">
 						<div class="top-slider__image"><img src="img/top-slider/top-slider-1.jpg" alt=""></div>
+						<div class="top-slider__mobile"><img src="img/top-slider/top-slider-mobile.jpg" alt=""></div>
 						<div class="top-slider__content">
 							<div class="top-slider__text">Разнообразный и богатый опыт <br> играет важную роль</div>
 							<div class="top-slider__btn"><a href="">Заказать</a></div>
@@ -184,6 +201,7 @@
 					<!-- 3 -->
 					<li class="top-slider__item">
 						<div class="top-slider__image"><img src="img/top-slider/top-slider-1.jpg" alt=""></div>
+						<div class="top-slider__mobile"><img src="img/top-slider/top-slider-mobile.jpg" alt=""></div>
 						<div class="top-slider__content">
 							<div class="top-slider__text">Разнообразный и богатый опыт <br> играет важную роль</div>
 							<div class="top-slider__btn"><a href="">Заказать</a></div>
@@ -192,6 +210,7 @@
 					<!-- 4 -->
 					<li class="top-slider__item">
 						<div class="top-slider__image"><img src="img/top-slider/top-slider-1.jpg" alt=""></div>
+						<div class="top-slider__mobile"><img src="img/top-slider/top-slider-mobile.jpg" alt=""></div>
 						<div class="top-slider__content">
 							<div class="top-slider__text">Разнообразный и богатый опыт <br> играет важную роль</div>
 							<div class="top-slider__btn"><a href="">Заказать</a></div>
@@ -206,77 +225,72 @@
 					<h2>специальные  предложения</h2>
 					<ul class="offers__list">
 						<li class="offers__item">
-							<a class="offers__ref" href="">
-								<div class="offers__in">
-									<h3>Все виды документов</h3>
-									<p>
-										Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean 
-									</p>
-									<div class="offers__btn">
-										<a class="offers__link" href="">Подробнее</a>
-									</div>
+							<div class="offers__in">
+								<div class="offers__icon"><img src="img/offers/offers-0.png" alt=""></div>
+								<h3>Все виды документов</h3>
+								<p>
+									Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean 
+								</p>
+								<div class="offers__btn">
+									<a class="offers__link" href="">Подробнее</a>
 								</div>
-							</a>
+							</div>
+							<a href="" class="offers__mobile-btn"></a>
 						</li>
 						<!-- 2 -->
 						<li class="offers__item">
-							<a class="offers__ref" href="">
-								<div class="offers__in">
-									<div class="offers__icon"><img src="img/offers/offers-1.png" alt=""></div>
-									<h3>Расчет стоимости</h3>
-									<p>
-										Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean 
-									</p>
-								</div>
-							</a>
+							<div class="offers__in">
+								<div class="offers__icon"><img src="img/offers/offers-1.png" alt=""></div>
+								<h3>Расчет стоимости</h3>
+								<p>
+									Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean 
+								</p>
+							</div>
+							<a href="" class="offers__mobile-btn"></a>
 						</li>
 						<!-- 3 -->
 						<li class="offers__item">
-							<a class="offers__ref" href="">
-								<div class="offers__in">
-									<div class="offers__icon"><img src="img/offers/offers-2.png" alt=""></div>
-									<h3>Штрихкод на продукцию</h3>
-									<p>
-										Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean 
-									</p>
-								</div>
-							</a>
+							<div class="offers__in">
+								<div class="offers__icon"><img src="img/offers/offers-2.png" alt=""></div>
+								<h3>Штрихкод на продукцию</h3>
+								<p>
+									Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean 
+								</p>
+							</div>
+							<a href="" class="offers__mobile-btn"></a>
 						</li>
 						<!-- 4 -->
 						<li class="offers__item">
-							<a class="offers__ref" href="">
-								<div class="offers__in">
-									<div class="offers__icon"><img src="img/offers/offers-3.png" alt=""></div>
-									<h3>Сертификат ISO</h3>
-									<p>
-										Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean 
-									</p>
-								</div>
-							</a>
+							<div class="offers__in">
+								<div class="offers__icon"><img src="img/offers/offers-3.png" alt=""></div>
+								<h3>Сертификат ISO</h3>
+								<p>
+									Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean 
+								</p>
+							</div>
+							<a href="" class="offers__mobile-btn"></a>
 						</li>
 						<!-- 5 -->
 						<li class="offers__item">
-							<a class="offers__ref" href="">
-								<div class="offers__in">
-									<div class="offers__icon"><img src="img/offers/offers-4.png" alt=""></div>
-									<h3>Оформление в краткие сроки</h3>
-									<p>
-										Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean 
-									</p>
-								</div>
-							</a>
+							<div class="offers__in">
+								<div class="offers__icon"><img src="img/offers/offers-4.png" alt=""></div>
+								<h3>Оформление в краткие сроки</h3>
+								<p>
+									Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean 
+								</p>
+							</div>
+							<a href="" class="offers__mobile-btn"></a>
 						</li>
 						<!-- 6 -->
 						<li class="offers__item">
-							<a class="offers__ref" href="">
-								<div class="offers__in">
-									<div class="offers__icon"><img src="img/offers/offers-5.png" alt=""></div>
-									<h3>Гарантия</h3>
-									<p>
-										Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean 
-									</p>
-								</div>
-							</a>
+							<div class="offers__in">
+								<div class="offers__icon"><img src="img/offers/offers-5.png" alt=""></div>
+								<h3>Гарантия</h3>
+								<p>
+									Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean 
+								</p>
+							</div>
+							<a href="" class="offers__mobile-btn"></a>
 						</li>
 					</ul>
 				</div>
@@ -341,16 +355,18 @@
 					<div class="about__container">
 						<div class="about__company company">
 							<h2>о компании</h2>
-							<div class="company__item">
-								<p>
-									Наша компания основана this is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. 
-								</p>
-								<a href="">Читать дальше</a>
+							<div class="company__img"><img src="img/gortest-bg.jpg" alt="">
+								<div class="company__content">
+									<p>
+										Наша компания основана this is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. 
+									</p>
+									<a href="">Читать дальше</a>
+								</div>
 							</div>
 						</div>
 						<div class="about__reviews reviews">
 							<h2>отзывы</h2>
-							<div class="reviews__bg"><div class="reviews__img"><img src="img/rostelecom.png" alt=""></div></div>
+							<div class="reviews__bg"><img src="img/rostelecom.jpg" alt=""></div>
 						</div>
 					</div>
 				</div>
@@ -548,7 +564,20 @@
 			</div>
 		</footer>
 		<!-- end footer -->	
-	</div>		
+	</div>
+
+	<!-- begin popup -->
+	<div id="success" class="popup">
+		<div class="popup__content">
+			<div class="popup__title">Спасибо!</div>
+			<div class="popup__text">Ваша заяка принята.</div>
+			<p>
+				Наш специалист свяжется с Вами в <br> течение 30 минут
+			</p>
+			<div class="popup__btn"><a href="">На главную</a></div>
+		</div>
+	</div>
+	<!-- end popup -->
 	
 	<script src="js/app.js"></script>
 </body>
