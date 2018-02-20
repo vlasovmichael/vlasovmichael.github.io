@@ -57,11 +57,7 @@ body { background: #ededed; font-family: 'Arial', sans-serif; font-weight: 400; 
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { font-family: 'Oswald', sans-serif; }
 
-h1, .h1 { font-size: 2em; margin: 0.67em 0; }
-
-h2, .h2 { font-size: 1.8em; margin: 0.37em 0; }
-
-h3, .h3 { font-size: 1.5em; margin: 0.17em 0; }
+h3 { font-weight: 700; text-align: center; font-size: 30px; color: #ffffff; text-transform: uppercase; margin-bottom: 35px; }
 
 p { line-height: 21px; margin-bottom: 15px; }
 
@@ -75,17 +71,13 @@ p { line-height: 21px; margin-bottom: 15px; }
 
 .overlay.is-visible { opacity: 1; visibility: visible; }
 
-table { width: 100%; background-color: #f0f0f0; border: 3px solid #34b8c0; margin-bottom: 15px; line-height: 1.42857143; }
-
-table td, table th { border: 1px solid #cccccc; padding: 2px; }
-
-table th { color: #6f51c7; }
+.main-btn { font-size: 24px; color: #ffffff; text-transform: uppercase; font-family: 'Arial'; background-color: #47d181; border: 0; border-bottom: 4px solid #252e30; padding: 30px 100px; }
 
 .header { margin-bottom: 15px; }
 
-.header-top { background-color: #252e30; position: relative; }
+.header-top { background-color: #252e30; }
 
-.header-top__container { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
+.header-top__container { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; position: relative; }
 
 .header-top__menu { width: 33px; height: 30px; cursor: pointer; }
 
@@ -147,8 +139,6 @@ table th { color: #6f51c7; }
 
 .main-search-form__btn { text-align: center; }
 
-.main-search-form__button { font-size: 24px; color: #ffffff; text-transform: uppercase; font-family: 'Arial'; background-color: #47d181; border: 0; border-bottom: 4px solid #252e30; padding: 30px 100px; }
-
 .main-search-form p { font-size: 22px; color: #373737; text-align: center; text-transform: uppercase; margin-bottom: 40px; }
 
 .index-catalog { margin-bottom: 25px; }
@@ -158,5 +148,37 @@ table th { color: #6f51c7; }
 .index-catalog-list__item { border-bottom: 1px solid #ededed; }
 
 .index-catalog-list__link { display: block; padding: 15px 0; font-size: 18px; color: #252e30; }
+
+.footer { background-color: #252e30; padding: 25px 0; }
+
+.footer__container { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; }
+
+.footer__cart { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; }
+
+.footer__cart span { font-size: 12px; color: #8d8d8d; display: block; }
+
+.footer__cart-image { background: url(../img/footer-cart.png) 0 0 no-repeat; -webkit-background-size: cover; background-size: cover; width: 61px; height: 60px; margin-right: 10px; }
+
+.footer__cart-value-wrap { margin-top: auto; padding-bottom: 15px; }
+
+.footer__cart-value { font-size: 18px; color: #8d8d8d; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; }
+
+.footer__cart-count { font-size: 24px; }
+
+.footer__copy span { display: block; font-size: 24px; color: #8d8d8d; line-height: 1.5; text-align: right; }
+
+.main-form-wrap { margin-bottom: 25px; }
+
+.main-form-wrap__container { background-color: #252e30; padding: 40px 15px; }
+
+.main-form-wrap__small { font-size: 14px; color: #ffffff; text-align: center; margin-bottom: 30px; }
+
+.main-form__input { width: 100%; border: 0; font-size: 30px; color: #666666; padding: 20px 12px; }
+
+.main-form__item { margin-bottom: 25px; }
+
+.main-form__btn { text-align: center; }
+
+.main-form__button { border-bottom: 4px solid #FFF; }
 
 /*# sourceMappingURL=../maps/style.css.map */
