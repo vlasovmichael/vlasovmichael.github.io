@@ -6,6 +6,13 @@ $(document).ready(function(){
         $('.menu-nav').toggleClass('is-open');
     });
 
+    // select2
+    $('select:not([multiple])').select2({
+        width: '100%',
+        minimumResultsForSearch: 30,
+        placeholder: $(this).data('placeholder')
+    });
+
 });
 
 // yandex map
