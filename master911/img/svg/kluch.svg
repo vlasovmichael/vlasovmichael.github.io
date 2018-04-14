@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15.281" height="22.22" viewBox="0 0 15.281 22.22">
+    <metadata>
+        <?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+            <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
+                <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                    <rdf:Description rdf:about="" />
+                </rdf:RDF>
+            </x:xmpmeta>
+            <?xpacket end="w"?>
+    </metadata>
+    <defs>
+        <style>
+        .cls-1 {
+            fill-rule: evenodd;
+            filter: url(#filter);
+        }
+        </style>
+        <filter id="filter" x="178" y="3012" width="15.281" height="22.22" filterUnits="userSpaceOnUse">
+            <feFlood result="flood" flood-color="#ea5257" />
+            <feComposite result="composite" operator="in" in2="SourceGraphic" />
+            <feBlend result="blend" in2="SourceGraphic" />
+        </filter>
+    </defs>
+    <path id="kluch_blue_" data-name="kluch(blue)" class="cls-1" d="M184.245,3034.22a6.981,6.981,0,0,1,2.838-1.9c1.576-.44,8.04-3.81,5.675-6.19,0,0,.355-1.79-0.946-2.23,0,0,.237-2.06-1.261-1.9a1.788,1.788,0,0,0-.473-1.59c-0.67-.51-1.1-0.51-1.892.32,0,0-1.85,1.79-2.207,2.22-0.394.48-.473,0.28-0.945,0.16s-2.247-1.07-2.68,2.06,0.118,3.34-1.892,5.24C180.462,3030.41,183.694,3033.67,184.245,3034.22Zm3.468-14.13-1.891-2.38s0.833-1.63.315-2.38l-5.2,1.43-1.419-4.13a4.189,4.189,0,0,0-1.1,5.08c1.214,2.9,4.414,2.23,4.571,2.23l2.05,2.54Zm-4.256-5.08,2.365-.63a3.03,3.03,0,0,0-3.153-2.38Z" transform="translate(-178 -3012)" />
+</svg>

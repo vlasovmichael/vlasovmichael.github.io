@@ -73,13 +73,24 @@ $(document).ready(function(){
         }
     });
 
-    // index slider 
+    // reviews slider 
     $('.js-reviews').slick({
         slidesToShow: 3,
-        slidesToScroll: 1,
+        slidesToScroll: 3,
         autoplay: false,
         autoplaySpeed: 5000,
         arrows: true
+    });
+
+    // live orders slider 
+    $('.js-live-orders').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        autoplay: true,
+        draggable: false,
+        infinite: false,
+        autoplaySpeed: 5000,
+        arrows: false
     });
 
 });
