@@ -4,8 +4,41 @@ $(document).ready(function(){
     $('.js-select2:not([multiple])').select2({
         width: '100%',
         minimumResultsForSearch: 30,
-        placeholder: $(this).data('placeholder')
+        templateResult: formatState
     });
+
+    function formatState (state) {
+        if (!state.id) {
+    return state.text;
+    }
+
+    var html = '';
+    switch(state.text) {
+        case '1':
+            html = '<img src="img/icons/icons-1.png" alt=""><div>КОТЛЫ</div>';
+        break
+        case '2':
+            html = '<img src="img/icons/icons-2.png" alt=""><div>колонки</div>';
+        break
+        case '3':
+            html = '<img src="img/icons/icons-3.png" alt=""><div>бойлеры</div>';
+        break
+        case '4':
+            html = '<img src="img/icons/icons-4.png" alt=""><div>ПЛИТЫ / ДУХОВОКИ</div>';
+        break
+        case '5': 
+            html = '<img src="img/icons/icons-5.png" alt=""><div>СТИРАЛЬНЫЕ МАШИНЫ</div>';
+        break
+        case '6': 
+            html = '<img src="img/icons/icons-6.png" alt=""><div>ХОЛОДИЛЬНИКИ</div>';
+        break
+    }
+      
+    var $state = $(
+        '<div class="custom-results">'+html+'</div> '
+    );
+        return $state;
+    };
 
     // masked input
     $(".js-phone").mask("+38(999) 999-99-99");
@@ -38,6 +71,15 @@ $(document).ready(function(){
         else{
             el.removeClass('not-valid');
         }
+    });
+
+    // index slider 
+    $('.js-reviews').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: false,
+        autoplaySpeed: 5000,
+        arrows: true
     });
 
 });
