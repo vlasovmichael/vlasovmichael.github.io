@@ -3,6 +3,50 @@ $(document).ready(function(){
     // init audio player
     $('audio').audioPlayer();
 
+    // init head select
+    $('.js-formstyler').styler();
+
+    // header mobile marker position
+    $('.js-header-citys').on('click', function(){
+        if (window.innerWidth <= 430 )
+        {    
+            $(this).toggleClass('is-open');
+            $('.header-citys-dropdown').toggleClass('is-open');
+        }
+    })
+
+    $('.header-citys-dropdown-list__link').on('click', function(e) {
+        var el = $(this);
+        var index = el.attr('data-attr');
+        alert('Вы выбрали ' + index);
+        e.preventDefault();
+    });
+
+    // anchor
+    $(".menu__link").click(function(e) {
+        var elementClick = $(this).attr("href")
+        var destination = $(elementClick).offset().top -50;
+        $("html:not(:animated),body:not(:animated)").animate({
+            scrollTop: destination
+        }, 800);
+        e.preventDefault();
+    });
+
+    $(".js-next-block").click(function(e) {
+        var elementClick = $(this).attr("href")
+        var destination = $(elementClick).offset().top;
+        $("html:not(:animated),body:not(:animated)").animate({
+            scrollTop: destination
+        }, 800);
+        e.preventDefault();
+    });
+
+    // button more
+    $('.js-btn-more').on('click', function() {
+        $(this).toggleClass('is-active');
+        $('.js-hidden-more').slideToggle();
+    });
+
     // init select2
     $('.js-select2:not([multiple])').select2({
         width: '100%',
@@ -47,20 +91,20 @@ $(document).ready(function(){
     $(".js-phone").mask("+38(999) 999-99-99");
 
     // header menu
-    $('.js-header-buter, .js-menu__close').click(function(){
-        $('.js-header-buter').toggleClass('is-active');
+    $('.header__buter, .js-menu__close').click(function(){
+        $('.header__buter').toggleClass('is-active');
         $('.header__menu').toggleClass('is-open');
-    });
+    })
 
-    $('.js-header-buter').on('click', function(){
+    $('.header__buter').on('click', function(){
         $('.main-menu-list').removeClass('is-open');
         $('.header-citys-dropdown').removeClass('is-open');
         $('.js-header-citys').removeClass('is-open');
-    });
+    })
 
     $(document).on('click touchstart', function(event) {
         if (!$(event.target).closest('.header').length) {
-            $('.js-header-buter').removeClass('is-active');
+            $('.header__buter').removeClass('is-active');
             $('.header__menu').removeClass('is-open');
         }
     });
@@ -83,7 +127,25 @@ $(document).ready(function(){
         autoplay: false,
         autoplaySpeed: 5000,
         draggable: false,
-        arrows: true
+        arrows: true,
+        responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            arrows: true
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true
+          }
+        }
+      ]
     });
 
     // live orders slider 
@@ -94,7 +156,25 @@ $(document).ready(function(){
         draggable: false,
         infinite: false,
         autoplaySpeed: 5000,
-        arrows: false
+        arrows: false,
+        responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            arrows: true
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true
+          }
+        }
+      ]
     });
 
 });

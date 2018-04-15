@@ -17,20 +17,82 @@
 			<div class="wrapper">
 				<div class="header__container">
 					<div class="header__logo">
-						<a href="">
-							<img src="../img/header-logo.png" alt="">
-						</a>
+						<div class="header__icon"></div>
+						<div class="header__text">СЕРВИСНЫЙ ЦЕНТР <span>MASTER<b>911</b></span></div>
 					</div>
-					<div class="header__right">
-						<div class="header__info">
-							<div class="header__tel">+38<span> (067)</span> 440 1231</div>
-							<div class="header__call">Звоните 24 часа без выходных</div>
+					<div class="header-citys js-header-citys">
+						<p class="header-citys__text mobile"><span class="point"></span></p>
+						<div class="header-citys__selects">
+							<select class="js-formstyler">
+								<option value="0">Ивано-Франковск</option>
+								<option value="1">Киев</option>
+								<option value="2">Одесса</option>
+								<option value="3">Харьков</option>
+								<option value="4">Киев</option>
+								<option value="5">Одесса</option>
+							</select>
 						</div>
-						<div class="header__buter js-header-buter">
-							<span></span>
-							<span></span>
-							<span></span>
-						</div>
+					</div>
+					<div class="header__info">
+						<div class="header__tel">+38<span> (067)</span> 440 1231</div>
+						<div class="header__call">Звоните 24 часа без выходных</div>
+					</div>
+					<div class="header__buter">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<div class="header-citys-dropdown">
+						<ul class="header-citys-dropdown-list">
+							<li class="header-citys-dropdown-list__item">
+								<a class="header-citys-dropdown-list__link" href="" data-attr="Ивано-Франковск">
+									Ивано-Франковск
+									<svg class="header-citys-dropdown-list__icon">
+										<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/arrow.svg#svg-search-arrow"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="header-citys-dropdown-list__item">
+								<a class="header-citys-dropdown-list__link" href="" data-attr="Киев">
+									Киев
+									<svg class="header-citys-dropdown-list__icon">
+										<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/arrow.svg#svg-search-arrow"></use>
+									</svg>
+								</a>
+								</li>
+							<li class="header-citys-dropdown-list__item">
+								<a class="header-citys-dropdown-list__link" href="" data-attr="Одесса">
+									Одесса
+									<svg class="header-citys-dropdown-list__icon">
+										<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/arrow.svg#svg-search-arrow"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="header-citys-dropdown-list__item">
+								<a class="header-citys-dropdown-list__link" href="" data-attr="Харьков">
+									Харьков
+									<svg class="header-citys-dropdown-list__icon">
+										<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/arrow.svg#svg-search-arrow"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="header-citys-dropdown-list__item">
+								<a class="header-citys-dropdown-list__link" href="" data-attr="Киев">
+									Киев
+									<svg class="header-citys-dropdown-list__icon">
+										<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/arrow.svg#svg-search-arrow"></use>
+									</svg>
+								</a>
+								</li>
+							<li class="header-citys-dropdown-list__item">
+								<a class="header-citys-dropdown-list__link" href="" data-attr="Одесса">
+									Одесса
+									<svg class="header-citys-dropdown-list__icon">
+										<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/arrow.svg#svg-search-arrow"></use>
+									</svg>
+								</a>
+							</li>
+						</ul>
 					</div>
 				</div>
 			</div>
@@ -38,14 +100,12 @@
 				<ul class="menu__list">
 					<li class="menu__item"><a class="menu__link" href="#home">ГЛАВНАЯ</a></li>
 					<li class="menu__item"><a class="menu__link" href="#services">УСЛУГИ</a></li>
-					<li class="menu__item"><a class="menu__link" href="#breaking-bad">ПОЛОМКИ И ИХ ПРИЧИНЫ</a></li>
-					<li class="menu__item"><a class="menu__link" href="#shop">МАГАЗИН</a></li>
+					<li class="menu__item"><a class="menu__link" href="#how-we-work">КАК РАБОТАЕТ MASTE911</a></li>
 					<li class="menu__item"><a class="menu__link" href="#advantages">ПРЕИМУЩЕСТВА</a></li>
-					<li class="menu__item"><a class="menu__link" href="#how-we-work">КАК МЫ РАБОТАЕМ</a></li>
-					<li class="menu__item"><a class="menu__link" href="#honor">ДОШКА ПОЧЕТА</a></li>
-					<li class="menu__item"><a class="menu__link" href="#our-works">НАШИ РАБОТЫ</a></li>
+					<li class="menu__item"><a class="menu__link" href="#live-orders">ЕФИР ЗАКАЗОВ</a></li>
 					<li class="menu__item"><a class="menu__link" href="#reviews">ОТЗЫВЫ</a></li>
-					<li class="menu__item"><a class="menu__link" href="#contacts">КОНТАКТЫ</a></li>
+					<li class="menu__item"><a class="menu__link" href="#citys">ГЕОГРАФИЯ МАЙСТРЕ911</a></li>
+					<li class="menu__item"><a class="menu__link" href="#blog">БЛОГ</a></li>
 				</ul>
 				<div class="menu__close js-menu__close">
 					<span></span>
@@ -58,7 +118,7 @@
 		
 <div class="content">
 	<!-- begin home -->
-	<div class="home">
+	<div class="home" id="home">
 		<div class="wrapper">
 			<div class="home__container">
 				<div class="home__title">Сервис <span>бытовых Услуг</span> <br> в г. Львов</div>
@@ -93,17 +153,17 @@
 				<div class="home__bottom-text">
 					Приедем в течении 3 часов, после обратной связи! Работаем по <br> Украине области.
 				</div>
-				<button class="home__bottom-button">
+				<a href="#services" class="home__bottom-button js-next-block">
 					<svg class="svg-icon bounce">
 	                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#arrow-down"></use>
 	                </svg>
-				</button>
+				</a>
 			</div>
 		</div>
 	</div>
 	<!-- begin home -->
 	<!-- begin services -->
-	<section class="services section-item">
+	<section class="services section-item" id="services">
 		<div class="wrapper">
 			<h2><span>НАШИ УСЛУГИ</span></h2>
 			<ul class="services-list">
@@ -155,7 +215,7 @@
 	</section>
 	<!-- end services -->
 	<!-- begin how we work -->
-	<section class="how-we-work section-item">
+	<section class="how-we-work section-item" id="how-we-work">
 		<div class="wrapper">
 			<h2><span>Как работает Maste911</span></h2>
 			<ul class="how-we-work-list">
@@ -205,7 +265,7 @@
 	</section>
 	<!-- end how we work -->
 	<!-- begin advantages -->
-	<section class="advantages section-item">
+	<section class="advantages section-item" id="advantages">
 		<div class="wrapper">
 			<h2><span>НАШИ преимущества</span></h2>
 			<ul class="advantages-list">
@@ -321,7 +381,7 @@
 	</section>
 	<!-- end advantages -->
 	<!-- begin live orders -->
-	<section class="live-orders section-item">
+	<section class="live-orders section-item" id="live-orders">
 		<div class="wrapper">
 			<h2><span>ЕФИР ЗАКАЗОВ</span></h2>
 			<div class="live-orders-wrapper">
@@ -356,7 +416,7 @@
 								<svg class="svg-icon">
 				                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#clock"></use>
 				                </svg>
-								Елена Петровна
+								сегодня 10:38
 							</div>
 						</div>
 					</li>
@@ -391,7 +451,7 @@
 								<svg class="svg-icon">
 				                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#clock"></use>
 				                </svg>
-								Елена Петровна
+								сегодня 10:38
 							</div>
 						</div>
 					</li>
@@ -426,7 +486,7 @@
 								<svg class="svg-icon">
 				                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#clock"></use>
 				                </svg>
-								Елена Петровна
+								сегодня 10:38
 							</div>
 						</div>
 					</li>
@@ -461,7 +521,7 @@
 								<svg class="svg-icon">
 				                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#clock"></use>
 				                </svg>
-								Елена Петровна
+								сегодня 10:38
 							</div>
 						</div>
 					</li>
@@ -496,7 +556,7 @@
 								<svg class="svg-icon">
 				                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#clock"></use>
 				                </svg>
-								Елена Петровна
+								сегодня 10:38
 							</div>
 						</div>
 					</li>
@@ -531,7 +591,7 @@
 								<svg class="svg-icon">
 				                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#clock"></use>
 				                </svg>
-								Елена Петровна
+								сегодня 10:38
 							</div>
 						</div>
 					</li>
@@ -566,7 +626,7 @@
 								<svg class="svg-icon">
 				                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#clock"></use>
 				                </svg>
-								Елена Петровна
+								сегодня 10:38
 							</div>
 						</div>
 					</li>
@@ -601,7 +661,7 @@
 								<svg class="svg-icon">
 				                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#clock"></use>
 				                </svg>
-								Елена Петровна
+								сегодня 10:38
 							</div>
 						</div>
 					</li>
@@ -636,7 +696,7 @@
 								<svg class="svg-icon">
 				                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#clock"></use>
 				                </svg>
-								Елена Петровна
+								сегодня 10:38
 							</div>
 						</div>
 					</li>
@@ -671,7 +731,7 @@
 								<svg class="svg-icon">
 				                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#clock"></use>
 				                </svg>
-								Елена Петровна
+								сегодня 10:38
 							</div>
 						</div>
 					</li>
@@ -692,7 +752,7 @@
 	</section>
 	<!-- end live orders -->
 	<!-- begin reviews -->
-	<section class="reviews section-item">
+	<section class="reviews section-item" id="reviews">
 		<div class="wrapper">
 			<h2><span>отзывы наших клиентов</span></h2>
 			<ul class="reviews-list js-reviews">
@@ -780,7 +840,15 @@
 					<div class="reviews-list__container">
 						<div class="reviews-list__name">Анатолий Петрович</div>
 						<div class="reviews-list__video">
-							
+							<a href="https://youtu.be/UQ4CiyGqHB8" class="reviews-list__image" data-fancybox>
+								<img src="img/video-reviews/video-reviews-1.jpg" alt="">
+								<div class="reviews-list__time">41 сек</div>
+								<span class="reviews-list__play">
+									<svg class="svg-icon">
+	                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#play"></use>
+	                                </svg>
+								</span>
+							</a>
 						</div>
 						<div class="reviews-list__bottom">
 							<div class="reviews-list__city">г. Киев</div>
@@ -814,7 +882,7 @@
 	</section>
 	<!-- end reviews -->
 	<!-- begin citys -->
-	<section class="citys section-item">
+	<section class="citys section-item" id="citys">
 		<div class="wrapper">
 			<h2><span>География Майстре911</span></h2>
 			<ul class="citys-list">
@@ -849,7 +917,7 @@
 	</section>
 	<!-- begin citys -->
 	<!-- begin blog -->
-	<section class="blog">
+	<section class="blog" id="blog">
 		<div class="wrapper">
 			<h2><span>Блог мастера</span></h2>
 			<ul class="blog-list">
@@ -902,6 +970,11 @@
 			<p>
 				Сломался газовый котел? Не проблема! Наша служба с удовольствием предоставит услуги по ремонту вашего газовогооборудования в самые короткие сроки. Каждый клиент может вызвать на дом специалиста, который выявит причину поломки... 
 			</p>
+			<div class="about__hidden js-hidden-more">
+				<p>
+					Сломался газовый котел? Не проблема! Наша служба с удовольствием предоставит услуги по ремонту вашего газовогооборудования в самые короткие сроки. Каждый клиент может вызвать на дом специалиста, который выявит причину поломки... 
+				</p>
+			</div>
 			<button class="about__button js-btn-more">
 				<svg class="svg-icon">
                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#arrow-down"></use>
@@ -918,7 +991,7 @@
 			<div class="wrapper">
 				<div class="footer__container">
 					<div class="footer__logo">
-						<a href=""><img src="../img/footer-logo.png" alt=""></a>
+						<a href=""><img src="img/footer-logo.png" alt=""></a>
 					</div>
 					<div class="footer__right">
 						<ul class="footer-list">
@@ -928,6 +1001,7 @@
 							<li class="footer-list__item"><a class="footer-list__link" href="">Блог Майстра</a></li>
 						</ul>
 						<div class="footer-contacts">
+							<div class="footer-contacts__title">Контакты службы поддержки:</div>
 							<div class="footer-contacts__text">
 								<svg class="svg-icon">
 				                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#phone"></use>
@@ -992,6 +1066,7 @@
 	<script src="js/slick.min.js"></script>
 	<script src="js/jquery.fancybox.min.js"></script>
 	<script src="js/audioplayer.min.js"></script>
+	<script src="js/jquery.formstyler.min.js"></script>
 	<script src="js/custom.js"></script>
 </body>
 </html>
