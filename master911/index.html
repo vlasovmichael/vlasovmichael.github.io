@@ -746,16 +746,9 @@
 					<div class="reviews-list__container">
 						<div class="reviews-list__name">Анатолий Петрович</div>
 						<div class="reviews-list__audio">
-							<audio id="audio" src="audio/1.mp3" loop></audio>
-
-								<canvas id="visualizer"></canvas>
-
-								<ul>
-								<li id="controls">
-								  <span class="icon-volume-high"></span>
-								</li>
-								  <li id="control-label">Audio <span>Off</span></li>
-								</ul>
+							<audio preload="auto" controls loop>
+								<source src="audio/1.mp3">
+							</audio>
 						</div>
 						<div class="reviews-list__bottom">
 							<div class="reviews-list__city">г. Киев</div>
@@ -806,7 +799,9 @@
 					<div class="reviews-list__container">
 						<div class="reviews-list__name">Анатолий Петрович</div>
 						<div class="reviews-list__audio">
-							
+							<audio preload="auto" controls loop>
+								<source src="audio/1.mp3">
+							</audio>
 						</div>
 						<div class="reviews-list__bottom">
 							<div class="reviews-list__city">г. Киев</div>
@@ -996,7 +991,7 @@
 	<script src="js/jquery.masked.input.min.js"></script>
 	<script src="js/slick.min.js"></script>
 	<script src="js/jquery.fancybox.min.js"></script>
-	
+	<script src="js/audioplayer.min.js"></script>
 	<script src="js/custom.js"></script>
 </body>
 </html>
