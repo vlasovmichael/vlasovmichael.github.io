@@ -719,7 +719,15 @@
 					<div class="reviews-list__container">
 						<div class="reviews-list__name">Анатолий Петрович</div>
 						<div class="reviews-list__video">
-							
+							<a href="https://youtu.be/UQ4CiyGqHB8" class="reviews-list__image" data-fancybox>
+								<img src="img/video-reviews/video-reviews-1.jpg" alt="">
+								<div class="reviews-list__time">41 сек</div>
+								<span class="reviews-list__play">
+									<svg class="svg-icon">
+	                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#play"></use>
+	                                </svg>
+								</span>
+							</a>
 						</div>
 						<div class="reviews-list__bottom">
 							<div class="reviews-list__city">г. Киев</div>
@@ -738,7 +746,16 @@
 					<div class="reviews-list__container">
 						<div class="reviews-list__name">Анатолий Петрович</div>
 						<div class="reviews-list__audio">
-							
+							<audio id="audio" src="audio/1.mp3" loop></audio>
+
+								<canvas id="visualizer"></canvas>
+
+								<ul>
+								<li id="controls">
+								  <span class="icon-volume-high"></span>
+								</li>
+								  <li id="control-label">Audio <span>Off</span></li>
+								</ul>
 						</div>
 						<div class="reviews-list__bottom">
 							<div class="reviews-list__city">г. Киев</div>
@@ -978,6 +995,8 @@
 	<script src="js/select2.full.min.js"></script>
 	<script src="js/jquery.masked.input.min.js"></script>
 	<script src="js/slick.min.js"></script>
+	<script src="js/jquery.fancybox.min.js"></script>
+	
 	<script src="js/custom.js"></script>
 </body>
 </html>
