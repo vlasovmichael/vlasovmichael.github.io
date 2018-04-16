@@ -24,7 +24,7 @@ $(document).ready(function(){
     // anchor
     $(".menu__link").click(function(e) {
         var elementClick = $(this).attr("href")
-        var destination = $(elementClick).offset().top -50;
+        var destination = $(elementClick).offset().top -80;
         $("html:not(:animated),body:not(:animated)").animate({
             scrollTop: destination
         }, 800);
@@ -33,7 +33,7 @@ $(document).ready(function(){
 
     $(".js-next-block").click(function(e) {
         var elementClick = $(this).attr("href")
-        var destination = $(elementClick).offset().top;
+        var destination = $(elementClick).offset().top - 80;
         $("html:not(:animated),body:not(:animated)").animate({
             scrollTop: destination
         }, 800);
@@ -45,6 +45,12 @@ $(document).ready(function(){
         $(this).toggleClass('is-active');
         $('.js-hidden-more').slideToggle();
     });
+
+    // main menu btn
+    $('.js-main-menu__btn').on('click', function(){
+        $(this).toggleClass('is-active');
+        $('.main-menu-list').toggleClass('is-open');
+    })
 
     // init select2
     $('.js-select2:not([multiple])').select2({
@@ -91,7 +97,7 @@ $(document).ready(function(){
     $('.js-formstyler').styler();
 
     // masked input
-    $(".js-phone").mask("(999) 999-99-99");
+    $(".js-phone").mask("+38(999) 999-99-99");
 
     // header menu
     $('.header__buter, .js-menu__close').click(function(){

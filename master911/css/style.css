@@ -139,6 +139,10 @@ The `sprites` mixin generates identical output to the CSS template
 
 .services-6 { background-image: url("../img/services/fridge.png"); }
 
+.kotel-icon { background-image: url(../img/sprite.png); background-position: -116px -123px; width: 23px; height: 25px; }
+
+.wather-icon { background-image: url(../img/sprite.png); background-position: -53px -53px; width: 20px; height: 25px; }
+
 .select2-container { -webkit-box-sizing: border-box; box-sizing: border-box; display: inline-block; margin: 0; position: relative; vertical-align: middle; }
 
 .select2-container .select2-selection--single { -webkit-box-sizing: border-box; box-sizing: border-box; cursor: pointer; display: block; height: 28px; -moz-user-select: none; -ms-user-select: none; user-select: none; -webkit-user-select: none; }
@@ -755,9 +759,9 @@ table th { color: #6f51c7; }
 
 #mymodal span { color: #FFF; font-size: 30px; text-align: center; display: block; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; height: 100%; font-family: "PT Sans"; font-weight: 400; }
 
-.header { background-color: #010202; position: fixed; top: 0; left: 0; width: 100%; padding: 13px 0; z-index: 18; height: 76px; }
+.header { background-color: #010202; position: fixed; top: 0; left: 0; width: 100%; padding: 13px 0; z-index: 10000; height: 76px; }
 
-.header__icon { background-image: url(../img/sprite.png); background-position: -65px -91px; width: 28px; height: 45px; }
+.header__icon { background-image: url(../img/sprite.png); background-position: -214px -249px; width: 28px; height: 45px; }
 
 .header__container { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
 
@@ -773,7 +777,7 @@ table th { color: #6f51c7; }
 
 .header__info { position: relative; margin-left: 40px; }
 
-.header__info:before { position: absolute; left: -52px; top: 3px; content: ''; background-image: url(../img/sprite.png); background-position: -29px -40px; width: 26px; height: 41px; }
+.header__info:before { position: absolute; left: -52px; top: 3px; content: ''; background-image: url(../img/sprite.png); background-position: -178px -198px; width: 26px; height: 41px; }
 
 .header__call { font-weight: 400; color: #FFF; font-size: 14px; }
 
@@ -880,6 +884,38 @@ table th { color: #6f51c7; }
 .header-citys-dropdown-list__item:last-child { margin-bottom: 0; }
 
 .header-citys-dropdown-list__icon { fill: #d7d7d7; width: 13px; height: 13px; display: block; }
+
+.main-menu { position: fixed; top: 76px; left: 0; width: 100%; background-color: rgba(0, 2, 2, 0.75); z-index: 17; }
+
+.main-menu__btn { width: 53px; height: 20px; position: absolute; background-color: rgba(2, 4, 6, 0.8); bottom: -20px; left: 0; right: 0; margin: auto; cursor: pointer; }
+
+.main-menu__btn:before { position: absolute; top: 0; bottom: 0; left: 0; right: 0; margin: auto; content: ''; background-image: url(../img/sprite.png); background-position: 0px 0px; width: 13px; height: 8px; -webkit-transition: all 250ms ease-in-out; -o-transition: all 250ms ease-in-out; transition: all 250ms ease-in-out; }
+
+.main-menu__btn.is-active:before { -webkit-transform: rotate(180deg); -ms-transform: rotate(180deg); transform: rotate(180deg); }
+
+.main-menu-list { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; margin: 0 -20px; max-height: 50px; overflow: hidden; -webkit-transition: max-height 250ms ease; -o-transition: max-height 250ms ease; transition: max-height 250ms ease; }
+
+.main-menu-list__link { font-size: 14px; font-weight: 400; text-transform: uppercase; color: #8E8E8E; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
+
+.main-menu-list__link:hover { color: #EA5257; }
+
+.main-menu-list__item { position: relative; padding: 0 20px; line-height: 50px; -webkit-transition: all 250ms ease-in-out; -o-transition: all 250ms ease-in-out; transition: all 250ms ease-in-out; }
+
+.main-menu-list__item:before { position: absolute; bottom: 0; left: 0; background-color: #EA5257; width: 0; height: 4px; content: ''; -webkit-transition: all 250ms ease-out; -o-transition: all 250ms ease-out; transition: all 250ms ease-out; }
+
+.main-menu-list__item:nth-child(n+6) { opacity: 0; visibility: hidden; }
+
+.main-menu-list__item:hover:before { width: 100%; }
+
+.main-menu-list__item:hover .kotel-icon { background-image: url(../img/sprite.png); background-position: -83px -88px; width: 23px; height: 25px; }
+
+.main-menu-list__item:hover .wather-icon { background-image: url(../img/sprite.png); background-position: -23px -18px; width: 20px; height: 25px; }
+
+.main-menu-list__icon { margin-right: 10px; -webkit-transition: none; -o-transition: none; transition: none; }
+
+.main-menu-list.is-open { max-height: 1000px; }
+
+.main-menu-list.is-open .main-menu-list__item:nth-child(n+6) { opacity: 1; visibility: visible; }
 
 .home { background-image: url("../img/home-bg.png"); background-position: center 0; -webkit-background-size: cover; background-size: cover; position: relative; padding-bottom: 50px; }
 
@@ -1464,7 +1500,7 @@ table th { color: #6f51c7; }
   .header__logo { -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; } }
 
 @media screen and (max-width: 767px) { .wrapper { padding: 0 15px; }
-  .header__info:before { background-image: url(../img/sprite.png); background-position: 0px 0px; width: 19px; height: 30px; left: -30px; }
+  .header__info:before { background-image: url(../img/sprite.png); background-position: -149px -158px; width: 19px; height: 30px; left: -30px; }
   .header__call { font-size: 14px; }
   .header__tel { font-size: 24px; }
   .header .menu__list { -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }
@@ -1528,6 +1564,8 @@ table th { color: #6f51c7; }
   .header__container { margin-top: 5px; }
   .header__icon { display: none; }
   .header .jq-selectbox { width: 170px; } }
+
+@media screen and (max-width: 570px) { .main-menu.is-open { overflow: auto; } }
 
 @media screen and (max-width: 480px) { .citys-list__item { width: 100%; } }
 
