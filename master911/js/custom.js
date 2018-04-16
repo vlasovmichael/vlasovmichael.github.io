@@ -3,8 +3,7 @@ $(document).ready(function(){
     // init audio player
     $('audio').audioPlayer();
 
-    // init head select
-    $('.js-formstyler').styler();
+    
 
     // header mobile marker position
     $('.js-header-citys').on('click', function(){
@@ -88,8 +87,11 @@ $(document).ready(function(){
         return $state;
     };
 
+    // init head select
+    $('.js-formstyler').styler();
+
     // masked input
-    $(".js-phone").mask("+38(999) 999-99-99");
+    $('.js-phone').inputmask({"mask": "+38(999) 999-99-99"});
 
     // header menu
     $('.header__buter, .js-menu__close').click(function(){
@@ -131,11 +133,12 @@ $(document).ready(function(){
         arrows: true,
         responsive: [
         {
-          breakpoint: 768,
+          breakpoint: 1281,
           settings: {
             slidesToShow: 2,
             slidesToScroll: 2,
-            arrows: true
+            arrows: true,
+            adaptiveHeight: true
           }
         },
         {
@@ -143,39 +146,77 @@ $(document).ready(function(){
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
-            arrows: true
+            arrows: true,
+            adaptiveHeight: true
           }
         }
       ]
     });
 
     // live orders slider 
-    $('.js-live-orders').slick({
-        slidesToShow: 5,
-        slidesToScroll: -1,
-        autoplay: true,
-        draggable: false,
-        infinite: true,
-        autoplaySpeed: 5000,
-        arrows: false,
-        responsive: [
-        {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3,
-            arrows: true
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1,
+    function slickOrders () {
+        var autoplaySpeed = 5000;
+        var autoplayOn    = true;
+
+        var $slickRoot = $('.js-live-orders');
+
+        $slickRoot.on('init', function() {
+            var $slickList = $slickRoot.find('.slick-list');
+
+            window.setInterval(function() {
+                if (!autoplayOn) return;
+                $slickRoot.slick('slickPrev');
+            }, autoplaySpeed);
+        });
+
+        $slickRoot.slick({
+            slidesToShow: 5,
             slidesToScroll: 1,
-            arrows: true
-          }
-        }
-      ]
+            autoplay: true,
+            draggable: false,
+            infinite: true,
+            autoplaySpeed: 5000,
+            arrows: false,
+            responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                arrows: true
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: true
+              }
+            }
+          ]
+        });
+    }
+
+    slickOrders();
+
+    // honor slider
+    $('.js-honor-list').slick({
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        arrows: true,
+        dots: true,
+        infinite: true,
+        responsive: [
+            {
+                breakpoint: 981,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+
+                }
+            }
+        ]
     });
 
 });
