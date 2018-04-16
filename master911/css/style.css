@@ -1319,7 +1319,7 @@ table th { color: #6f51c7; }
 
 .popup__content { padding: 30px; }
 
-.popup__content p { font-weight: 300; font-size: 24px; line-height: 28px; }
+.popup__content p { font-weight: 300; font-size: 16px; line-height: 28px; }
 
 .popup__content p:last-child { margin-bottom: 0; }
 
@@ -1424,10 +1424,10 @@ table th { color: #6f51c7; }
   .live-orders-list__container:before { width: 100px; height: 100px; -webkit-background-size: contain; background-size: contain; background-repeat: no-repeat; background-position: center; }
   .live-orders-list__item { padding: 0 2px; } }
 
-@media screen and (max-width: 1080px) { .header__info { display: none; }
-  .header__call { font-size: 18px; }
-  .header__tel { font-size: 32px; }
-  .header-citys { margin-right: 10px; } }
+@media screen and (max-width: 1080px) { .header__call { font-size: 13px; }
+  .header__tel { font-size: 22px; }
+  .header-citys { margin-right: 10px; }
+  .header__info { margin-left: 18px; padding-left: 40px; padding-right: 30px; } }
 
 @media screen and (max-width: 1023px) { .header .menu__item { margin-right: 0; -webkit-box-flex: 2; -webkit-flex-grow: 2; -ms-flex-positive: 2; flex-grow: 2; }
   .icon-services { -webkit-background-size: contain; background-size: contain; }
@@ -1516,6 +1516,7 @@ table th { color: #6f51c7; }
   .header__logo { -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; } }
 
 @media screen and (max-width: 767px) { .wrapper { padding: 0 15px; }
+  .header__info { display: none; }
   .header__info:before { background-image: url(../img/sprite.png); background-position: -149px -158px; width: 19px; height: 30px; left: -30px; }
   .header__call { font-size: 14px; }
   .header__tel { font-size: 24px; }
