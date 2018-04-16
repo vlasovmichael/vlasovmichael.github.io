@@ -1561,7 +1561,7 @@ table th { color: #6f51c7; }
   .blog-list__item { width: 100%; margin-bottom: 30px; }
   .blog-list__item:last-child { margin-bottom: 0; }
   .footer__container { -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }
-  .footer__logo { margin: 0 auto 30px; -webkit-box-flex: 0; -webkit-flex: 0 0 100%; -ms-flex: 0 0 100%; flex: 0 0 100%; max-width: 100%; }
+  .footer__logo { margin: 0 auto 30px; -webkit-box-flex: 0; -webkit-flex: 0 0 70%; -ms-flex: 0 0 70%; flex: 0 0 70%; max-width: 70%; }
   .popup-citys__title { font-size: 20px; margin-bottom: 25px; }
   .popup-citys-list { margin: 0 -10px; }
   .popup-citys-list__item { width: 50%; font-size: 13px; padding: 0 10px; }

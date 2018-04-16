@@ -201,6 +201,12 @@ $(document).ready(function(){
             }
           ]
         });
+
+        $(window).on('resize orientationChange', function(event) { 
+            if (window.innerWidth >= 767 ) {
+                $slickRoot.slick('reinit');
+            }
+        });
     }
 
     slickOrders();
