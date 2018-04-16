@@ -1139,9 +1139,9 @@ table th { color: #6f51c7; }
 
 .footer__container { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; }
 
-.footer__right { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-flex: 1; -webkit-flex-grow: 1; -ms-flex-positive: 1; flex-grow: 1; margin: 0 -10px; }
+.footer__right { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; margin: 0 -10px; }
 
-.footer__logo { margin-right: 90px; -webkit-box-flex: 0; -webkit-flex: 0 0 440px; -ms-flex: 0 0 440px; flex: 0 0 440px; max-width: 440px; }
+.footer__logo { margin-right: 90px; -webkit-box-flex: 0; -webkit-flex: 0 0 320px; -ms-flex: 0 0 320px; flex: 0 0 320px; max-width: 320px; margin-right: auto; }
 
 .footer__logo img { display: block; width: 100%; }
 
@@ -1165,7 +1165,7 @@ table th { color: #6f51c7; }
 
 .footer-contacts__title { font-weight: 600; color: #FFF; font-size: 15px; margin-bottom: 15px; }
 
-.footer-list { padding: 0 10px; }
+.footer-list { padding: 0 10px; margin-right: 60px; }
 
 .footer-list__link { font-size: 15px; font-weight: 300; line-height: 2.2; color: #ffffff; }
 
@@ -1568,7 +1568,8 @@ table th { color: #6f51c7; }
   .popup-citys-list__item { width: 50%; font-size: 13px; padding: 0 10px; }
   .partners-list { -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; }
   .partners-list__item { width: 100%; margin-bottom: 20px; }
-  .partners-list__item:last-child { margin-bottom: 0; } }
+  .partners-list__item:last-child { margin-bottom: 0; }
+  .footer-list { margin-right: 0; } }
 
 @media screen and (max-width: 680px) { .popup { width: auto; margin: 0 15px !important; }
   .popup__title { font-size: 15px; }
