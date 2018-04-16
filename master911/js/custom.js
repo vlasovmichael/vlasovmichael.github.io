@@ -51,6 +51,7 @@ $(document).ready(function(){
     $('.js-select2:not([multiple])').select2({
         width: '100%',
         minimumResultsForSearch: 30,
+        placeholder: $(this).data('placeholder'),
         templateResult: formatState
     });
 
@@ -151,10 +152,10 @@ $(document).ready(function(){
     // live orders slider 
     $('.js-live-orders').slick({
         slidesToShow: 5,
-        slidesToScroll: 1,
+        slidesToScroll: -1,
         autoplay: true,
         draggable: false,
-        infinite: false,
+        infinite: true,
         autoplaySpeed: 5000,
         arrows: false,
         responsive: [
