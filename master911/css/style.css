@@ -759,6 +759,14 @@ table th { color: #6f51c7; }
 
 #mymodal span { color: #FFF; font-size: 30px; text-align: center; display: block; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; height: 100%; font-family: "PT Sans"; font-weight: 400; }
 
+.languages { position: absolute; bottom: -54px; right: 3%; z-index: 10; border: 3px solid #000; }
+
+.languages-list__link { background-color: #020406; color: #FFF; font-family: "Arial"; font-size: 12px; font-weight: 700; text-transform: uppercase; display: block; padding: 6px 10px; }
+
+.languages-list__link:hover { background-color: #EA5257; }
+
+.languages-list__item.is-active .languages-list__link { background-color: #EA5257; }
+
 .header { background-color: #010202; position: fixed; top: 0; left: 0; width: 100%; padding: 13px 0; z-index: 10000; height: 76px; }
 
 .header__icon { background-image: url(../img/sprite.png); background-position: -214px -249px; width: 28px; height: 45px; }
