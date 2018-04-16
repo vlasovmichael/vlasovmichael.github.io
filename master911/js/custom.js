@@ -181,6 +181,7 @@ $(document).ready(function(){
             autoplay: true,
             draggable: false,
             infinite: true,
+            swipe: false,
             autoplaySpeed: 5000,
             arrows: false,
             responsive: [
