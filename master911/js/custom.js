@@ -61,22 +61,22 @@ $(document).ready(function(){
 
     var html = '';
     switch(state.text) {
-        case '1':
+        case 'котлы':
             html = '<img src="img/icons/icons-1.png" alt=""><div>КОТЛЫ</div>';
         break
-        case '2':
+        case 'колонки':
             html = '<img src="img/icons/icons-2.png" alt=""><div>колонки</div>';
         break
-        case '3':
+        case 'бойлеры':
             html = '<img src="img/icons/icons-3.png" alt=""><div>бойлеры</div>';
         break
-        case '4':
+        case 'плиты / духовки':
             html = '<img src="img/icons/icons-4.png" alt=""><div>ПЛИТЫ / ДУХОВОКИ</div>';
         break
-        case '5': 
+        case 'стиральные машины': 
             html = '<img src="img/icons/icons-5.png" alt=""><div>СТИРАЛЬНЫЕ МАШИНЫ</div>';
         break
-        case '6': 
+        case 'холодильники': 
             html = '<img src="img/icons/icons-6.png" alt=""><div>ХОЛОДИЛЬНИКИ</div>';
         break
     }
