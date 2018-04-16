@@ -91,7 +91,7 @@ $(document).ready(function(){
     $('.js-formstyler').styler();
 
     // masked input
-    $('.js-phone').inputmask({"mask": "+38(999) 999-99-99"});
+    $(".js-phone").mask("(999) 999-99-99");
 
     // header menu
     $('.header__buter, .js-menu__close').click(function(){
@@ -182,16 +182,14 @@ $(document).ready(function(){
               breakpoint: 768,
               settings: {
                 slidesToShow: 3,
-                slidesToScroll: 1,
-                arrows: true
+                slidesToScroll: 1
               }
             },
             {
               breakpoint: 480,
               settings: {
                 slidesToShow: 1,
-                slidesToScroll: 1,
-                arrows: true
+                slidesToScroll: 1
               }
             }
           ]
@@ -214,6 +212,33 @@ $(document).ready(function(){
                     slidesToShow: 1,
                     slidesToScroll: 1
 
+                }
+            }
+        ]
+    });
+
+    // blog slider
+    $('.js-blog-list').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: false,
+        draggable: false,
+        dots: false,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    arrows: true
+                }
+            },
+            {
+                breakpoint: 531,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: true
                 }
             }
         ]
