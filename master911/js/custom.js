@@ -3,7 +3,10 @@ $(document).ready(function(){
     // init audio player
     $('audio').audioPlayer();
 
-    
+    // category mobile btn
+    $('.js-category-btn').on('click', function() {
+        $('.blog-category-list').toggleClass('is-open');
+    });
 
     // header mobile marker position
     $('.js-header-citys').on('click', function(){
@@ -253,10 +256,8 @@ $(document).ready(function(){
         ]
     });
 
-    $(window).on('resize orientationChange', function(event) { 
-        if (window.innerWidth <= 767 ) {
-            $('.js-blog-list').slick('init');
-        }
+    $(window).on('resize', function(event) { 
+        $('.js-blog-list').slick('resize');
     });
 
 });
