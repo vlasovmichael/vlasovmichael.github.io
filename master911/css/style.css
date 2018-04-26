@@ -1657,7 +1657,7 @@ table th { color: #6f51c7; }
   .citys-list__item { width: 50%; }
   .citys__bottom-text { font-size: 15.5px; line-height: 19px; }
   .blog-list { -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; }
-  .blog-list__item { width: 100%; margin-bottom: 30px; }
+  .blog-list__item { width: 100%; }
   .blog-list__item:last-child { margin-bottom: 0; }
   .footer__container { -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }
   .footer__logo { margin: 0 auto 30px; -webkit-box-flex: 0; -webkit-flex: 0 0 70%; -ms-flex: 0 0 70%; flex: 0 0 70%; max-width: 70%; }
@@ -1688,7 +1688,10 @@ table th { color: #6f51c7; }
   .blog-list--inner .blog-list__content p { font-size: 19.2px; }
   .how-we-work-list__content p { font-size: 14px; }
   .citys-list .slick-prev { background-image: url(../img/svg/slick-prev-black.svg); left: 20px; width: 23px; height: 23px; -webkit-background-size: cover; background-size: cover; z-index: 5; }
-  .citys-list .slick-next { background-image: url(../img/svg/slick-next-black.svg); right: 20px; width: 23px; height: 23px; -webkit-background-size: cover; background-size: cover; z-index: 5; } }
+  .citys-list .slick-next { background-image: url(../img/svg/slick-next-black.svg); right: 20px; width: 23px; height: 23px; -webkit-background-size: cover; background-size: cover; z-index: 5; }
+  .blog-list__category { font-size: 12px; }
+  .blog-list__title a { font-size: 14px; }
+  .blog-list__content p { font-size: 14px; margin-bottom: 0; } }
 
 @media screen and (max-width: 680px) { .popup { width: auto; margin: 0 15px !important; }
   .popup__title { font-size: 15px; }
