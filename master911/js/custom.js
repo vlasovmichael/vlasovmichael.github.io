@@ -229,6 +229,30 @@ $(document).ready(function(){
         ]
     });
 
+    // citys slider
+    function citysSlick() {
+        var slider = $('.js-citys-list');
+        setTimeout(function() {
+            if (slider.hasClass('slick-initialized')) {
+                slider.slick('unslick');
+            }
+            if ($(window).outerWidth() <= 767) {
+                slider.slick({
+                    dots: false,
+                    arrows: true,
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                });
+            }
+        }, 200);
+    };
+
+    citysSlick();
+
+    $(window).on('resize', function() { 
+        citysSlick();
+    });
+
     // blog slider
     $('.js-blog-list').slick({
         slidesToShow: 3,
