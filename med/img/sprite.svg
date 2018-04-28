@@ -4,8 +4,28 @@
 			<defs><style>.cls-1{fill:#00365a;fill-rule:evenodd}</style></defs><path id="arrow" class="cls-1" d="M949.01 937.007L945 941l-2 2-2-2-4.007-4 2-2 4.007 4 4.006-4z" transform="translate(-937 -935)"></path>
 		</symbol>
 	
+		<symbol id="arrow-bottom" viewBox="0 0 10.34 7">
+			<defs><style>.cls-1{fill:#fff;fill-rule:evenodd}</style></defs><path id="arrow_копия_2" data-name="arrow копия 2" class="cls-1" d="M1379.34 645.756l-3.45 3.5-1.72 1.744-1.73-1.748-3.45-3.5 1.73-1.749 3.45 3.5 3.45-3.5z" transform="translate(-1369 -644)"></path>
+		</symbol>
+	
+		<symbol id="arrow-down" viewBox="0 0 10.34 7">
+			<defs><style>.cls-1{fill:#fff;fill-rule:evenodd}</style></defs><path id="arrow_копия_2" data-name="arrow копия 2" class="cls-1" d="M1379.34 645.756l-3.45 3.5-1.72 1.744-1.73-1.748-3.45-3.5 1.73-1.749 3.45 3.5 3.45-3.5z" transform="translate(-1369 -644)"></path>
+		</symbol>
+	
 		<symbol id="arrow-right" viewBox="0 0 9 3">
 			<defs><style>.cls-1{fill-rule:evenodd}</style></defs><path id="arrow" class="cls-1" d="M411 344.236h6.663a2.3 2.3 0 0 1-.5-1.238A6.513 6.513 0 0 0 420 344.5a6.829 6.829 0 0 0-2.827 1.5 2.667 2.667 0 0 1 .508-1.274H411v-.492z" transform="translate(-411 -343)"></path>
+		</symbol>
+	
+		<symbol id="download-icon" viewBox="0 0 31 31">
+			<defs><style>.cls-1{fill:#00365a;fill-rule:evenodd}</style></defs><path id="download_icon" data-name="download icon" class="cls-1" d="M379.5 662a15.5 15.5 0 1 1 15.5-15.5 15.5 15.5 0 0 1-15.5 15.5zm6.652-18.111l-4.314 4.315v-11.391h-4.728v11.407l-4.33-4.33-3.343 3.343 6.686 6.686 3.343 3.344 3.343-3.344 6.687-6.686z" transform="translate(-364 -631)"></path>
+		</symbol>
+	
+		<symbol id="pagination-left" viewBox="0 0 7 11">
+			<defs><style>.cls-1{fill:#fff;fill-rule:evenodd}</style></defs><path id="arrow_копия" data-name="arrow копия" class="cls-1" d="M424.259 1601l-3.5-3.67-1.759-1.84 1.752-1.83 3.5-3.68 1.753 1.84-3.5 3.67 3.5 3.68z" transform="translate(-419 -1590)"></path>
+		</symbol>
+	
+		<symbol id="pagination-right" viewBox="0 0 6.719 10.82">
+			<defs><style>.cls-1{fill:#fff;fill-rule:evenodd}</style></defs><path id="arrow" class="cls-1" d="M553.014 1589.59l3.364 3.61 1.682 1.8-1.682 1.81-3.364 3.61-1.681-1.8 3.367-3.62-3.364-3.61z" transform="translate(-551.344 -1589.59)"></path>
 		</symbol>
 	
 		<symbol id="search" viewBox="0 0 56.966 56.966">

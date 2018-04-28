@@ -11,13 +11,30 @@ $(document).on('click touchstart', function(event) {
     }
 });
 
+// datarange picker
+$('.js-calendar').daterangepicker({
+    singleDatePicker: true,
+    showDropdowns: true,
+    "locale": {
+        "format": "D.MM.YYYY",
+        "opens": "left",
+        "separator": " - ",
+        "daysOfWeek": [
+            'Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'
+        ],
+        "monthNames": [
+            'Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'
+        ],
+        "firstDay": 1
+    }
+});
+
 // init select2
-// $('.js-select2:not([multiple])').select2({
-//     width: '100%',
-//     minimumResultsForSearch: 30,
-//     placeholder: $(this).data('placeholder'),
-//     templateResult: formatState
-// });
+$('.js-select2:not([multiple])').select2({
+    width: '100%',
+    minimumResultsForSearch: -1,
+    placeholder: $(this).data('placeholder')
+});
 
 
 // header menu
