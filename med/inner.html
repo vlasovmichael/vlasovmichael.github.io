@@ -482,19 +482,88 @@
 				<img class="img-md" src="img/some-img.jpg" alt="">
 			</div>
 			<h2 class="text-center">Что мы предлагаем</h2>
-			<div class="main-text-block__item">
-				<p>Приобретение навыков без риска для пациента</p>
-				<ul>
-					<li>Не ограничено число повторов для отработки навыков и ликвидации ошибок</li>
-					<li>Объективная оценка выполнения манипуляции</li>
-				</ul>
-				<ol>
-					<li>Возможность изучения редких патологий, состояний, вмешательств</li>
-					<li>Нет стресса</li>
-				</ol>
-				<p>
-					Симуляционный центр нашего университета, созданный Решением Ученого совета в рамках Центра инновационных образовательных технологий, ставит своей целью повышение уровня профессиональных навыков интернов, клинических ординаторов и слушателей факультета постдипломного образования СПбГМУ им.И.П.Павлова в соответствии с «Положением о Центре инновационных образовательных технологий».
-				</p>
+			<div class="main-text-block__container">
+				<div class="main-text-block__item">
+					<p>Приобретение навыков без риска для пациента</p>
+					<ul>
+						<li>Не ограничено число повторов для отработки навыков и ликвидации ошибок</li>
+						<li>Объективная оценка выполнения манипуляции</li>
+					</ul>
+					<ol>
+						<li>Возможность изучения редких патологий, состояний, вмешательств</li>
+						<li>Нет стресса</li>
+					</ol>
+					<p>
+						Симуляционный центр нашего университета, созданный Решением Ученого совета в рамках Центра инновационных образовательных технологий, ставит своей целью повышение уровня профессиональных навыков интернов, клинических ординаторов и слушателей факультета постдипломного образования СПбГМУ им.И.П.Павлова в соответствии с «Положением о Центре инновационных образовательных технологий».
+					</p>
+				</div>
+				<div class="main-text-block__aside aside">
+					<div class="aside__title">
+						<img src="img/marker.jpg" alt="">
+						<span>Место проведения</span>
+					</div>
+					<p>
+						Кафедра дополнительного образования Санкт-Петербургский государственный медицинский университет им. акад. И.П. Павлова
+					</p>
+					<div class="aside__title">
+						<img src="img/clock.jpg" alt="">
+						<span>Выберите дату</span>
+					</div>
+					<div class="aside__date">
+						<span>7–11 мая</span>
+						<span>Ноябрь 2018</span>
+						<span>Декабрь 2019</span>
+					</div>
+					<div class="aside__another-date">
+						<div class="aside__btn-container">
+							<div class="aside__another-date_btn">
+								<button class="js-aside-date-btn">Другие даты</button>
+							</div>
+							<div class="aside__another-date_btn">
+								<a data-fancybox href="#popup">Узнать о новой дате</a>
+							</div>
+						</div>
+						<div class="aside__date aside__date--another js-another-date">
+							<span>7–11 мая</span>
+							<span>Ноябрь 2018</span>
+							<span>Декабрь 2019</span>
+						</div>
+					</div>
+					<div class="aside__price">32 000 рублей</div>
+					<div class="aside__btn">
+						<a class="blue-btn" href="">Записаться</a>
+					</div>
+					<div class="aside__info">
+						<div class="aside__info_title">Цикл зафиксирован на базе НМО</div>
+						<p>
+							* Цикл может быть оплачен из средств ОМС
+						</p>
+					</div>
+					<div class="main-questions-list">
+						<div class="main-questions-list__content">
+							<div class="main-questions-list__title">Куратор программы</div>
+							<div class="main-questions-list__name">Сидоров Сидор Петрович</div>
+							<div class="main-questions-list__info">
+								<div class="main-questions-list__phone">
+									<div class="main-questions-list__phone_text">
+										Телефон:
+									</div>
+									<div class="main-questions-list__phone_number">
+										<div><a href="tel:+78123386048">+7 (812) 338-60-48</a></div>
+										<div><a href="tel:+78123386048">+7 (812) 338-60-48</a></div>
+									</div>
+								</div>
+								<div class="main-questions-list__email">
+									<span>Email:</span>
+									<a href="mailto:edudogovor@spb-gmu.ru">edudogovor@spb-gmu.ru</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="aside__btn">
+						<a class="blue-btn" href="">Задать вопрос</a>
+					</div>
+				</div>
 			</div>
 			<h2 class="text-center">Какую практическую пользу получают наши клиенты</h2>
 			<p class="text-center">
@@ -916,6 +985,38 @@
 		</div>
 	</section>
 	<!-- end seminars -->
+</div>
+<div id="popup" class="popup">
+	<div class="popup__container">
+		<h2>Заголовок</h2>
+		<form>
+			<div class="popup-form-list">
+				<label class="popup-form-list__col">
+					<span><b>*</b> Фамилия</span>
+					<input class="popup-form-list__input" type="text">
+				</label>
+				<label class="popup-form-list__col">
+					<span><b>*</b> Имя</span>
+					<input class="popup-form-list__input" type="text">
+				</label>
+				<label class="popup-form-list__col">
+					<span><b>*</b> Отчество</span>
+					<input class="popup-form-list__input" type="text">
+				</label>
+				<!--  -->
+				<label class="popup-form-list__col popup-form-list__col--textarea">
+					<span><b>*</b> Ваши вопросы, коментарии</span>
+					<textarea class="popup-form-list__input" cols="30" rows="10"></textarea>
+				</label>
+				<div class="popup-form-list__col">
+					<button class="blue-btn">отправить</button>
+					<p>
+						Нажимая кнопку, я даю свое согласие на обработку моих персональных данных, в соответствии с Федеральным законом от 27.07.2006 года № 152-ФЗ «О персональных данных»
+					</p>
+				</div>
+			</div>
+		</form>
+	</div>
 </div>
 
 		<!-- end content -->

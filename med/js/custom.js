@@ -11,6 +11,15 @@ $(document).on('click touchstart', function(event) {
     }
 });
 
+// another date aside
+$('.js-aside-date-btn').on('click', function(){
+    var btn = $('.js-aside-date-btn');
+
+    $('.js-another-date').slideToggle();
+    if (btn.text()=='Другие даты') btn.text('Скрыть');
+    else btn.text('Другие даты');
+});
+
 // datarange picker
 $('.js-calendar').daterangepicker({
     singleDatePicker: true,
@@ -36,32 +45,6 @@ $('.js-select2:not([multiple])').select2({
     placeholder: $(this).data('placeholder')
 });
 
-
-// header menu
-// $('.header__buter, .js-menu__close').click(function(){
-//     $('.header__buter').toggleClass('is-active');
-//     $('.header__menu').toggleClass('is-open');
-// })
-
-
-// $(document).on('click touchstart', function(event) {
-//     if (!$(event.target).closest('.header').length) {
-//         $('.header__buter').removeClass('is-active');
-//         $('.header__menu').removeClass('is-open');
-//     }
-// });
-
-// validation
-// $('.js-form-submit').on('click', function() {
-//     var el = $('.js-form-input');
-//     if($(el).val() == 0) {
-//         el.addClass('not-valid');
-//     }
-//     else{
-//         el.removeClass('not-valid');
-//     }
-// });
-
 // reviews slider 
 $('.js-main-slider').slick({
     slidesToShow: 1,
@@ -72,5 +55,4 @@ $('.js-main-slider').slick({
     arrows: true,
     dots: true,
     adaptiveHeight: true
-    // infinite: false
 });
