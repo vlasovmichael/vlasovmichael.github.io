@@ -969,6 +969,7 @@ h2.h1 { font-size: 36px; font-weight: 700; color: #1e5995; text-align: center; m
   .header__nav ul li:last-child { margin: 0; }
   .header__nav ul li:before { display: none; }
   .header__nav ul li a { font-size: 16px; }
+  .main-banner__container { margin: 0; }
   .trending-list__item { width: -webkit-calc(50% - 12px); width: calc(50% - 12px); }
   .video-section { background-position: right; }
   .video-section__container { max-width: 100%; padding: 20px 0 0 0; }
