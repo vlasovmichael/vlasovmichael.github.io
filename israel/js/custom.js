@@ -1,10 +1,3 @@
-// pixel perfect toggle
-$('body').keydown(function(e){
-    if(e.keyCode == 27) {
-        $('body').toggleClass('pixelperfect');
-    }
-});
-
 // mobile menu
 $('.js-mobile-menu').click(function(){
 	$(this).toggleClass('is-active');

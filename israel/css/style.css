@@ -623,7 +623,7 @@ h2 { font-weight: 700; color: #333333; font-size: 36px; text-align: center; marg
 
 h2.h1 { font-size: 36px; font-weight: 700; color: #1e5995; text-align: center; margin-bottom: 45px; }
 
-.main-sub_title { color: #1e5995; font-size: 16px; font-family: 'Bodoni MT'; font-style: italic; font-weight: 400; text-align: center; margin-bottom: 65px; }
+.main-sub_title { color: #1e5995; font-size: 16px; font-family: 'Bodoni MT'; font-style: italic; font-weight: 400; text-align: center; margin-bottom: 50px; }
 
 .main-btn { -webkit-border-radius: 35px; border-radius: 35px; background-color: #1e5995; color: #FFF; font-weight: 700; font-size: 18px; letter-spacing: 2px; text-transform: uppercase; display: inline-block; padding: 21px 46.5px; }
 
@@ -707,21 +707,19 @@ h2.h1 { font-size: 36px; font-weight: 700; color: #1e5995; text-align: center; m
 
 .head-basket__value { position: absolute; top: -6px; right: -6px; min-width: 12px; height: 12px; background-color: #1e5897; -webkit-border-radius: 50%; border-radius: 50%; font-size: 8px; font-weight: 700; color: #FFF; text-align: center; line-height: 12px; }
 
-.main-banner { background-image: url("../img/main-banner/main-banner-1.jpg"); background-repeat: no-repeat; background-position: center; min-height: 460px; -webkit-background-size: cover; background-size: cover; }
-
-.main-banner__container { max-width: 500px; padding-top: 126px; }
+.main-banner__container { padding: 50px 20px 20px; background-image: url("../img/main-banner/main-banner-1.jpg"); background-repeat: no-repeat; background-position: center; -webkit-background-size: cover; background-size: cover; margin: 0 40px; }
 
 .main-banner__sub-title { font-weight: 700; color: #FFF; font-size: 14px; margin-bottom: 2px; }
 
 .main-banner__title { font-size: 36px; color: #FFF; font-weight: 700; margin-bottom: 37px; }
 
-.main-banner p { font-family: 'Bodoni MT'; font-style: italic; font-weight: 400; font-size: 16px; color: #FFF; line-height: 19px; margin-bottom: 38px; }
+.main-banner p { font-family: 'Bodoni MT'; font-style: italic; font-weight: 400; font-size: 16px; color: #FFF; line-height: 19px; margin-bottom: 38px; max-width: 500px; }
 
 .main-banner__btn a { background-color: #1e5995; color: #FFF; font-size: 20px; font-weight: 700; padding: 10.5px 47px; display: inline-block; }
 
 .main-banner__btn a:hover { background-color: #333333; }
 
-.trending { padding: 90px 0 14px; }
+.trending { padding: 40px 0 14px; }
 
 .trending-list { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; margin: 0 -6px; }
 
@@ -745,7 +743,7 @@ h2.h1 { font-size: 36px; font-weight: 700; color: #1e5995; text-align: center; m
 
 .video-section p { font-family: 'Bodoni MT'; font-style: italic; font-weight: 400; font-size: 16px; color: #FFF; line-height: 19px; margin-bottom: 48px; }
 
-.our-product { padding-top: 68px; padding-bottom: 73px; }
+.our-product { padding-top: 20px; padding-bottom: 73px; }
 
 .our-product__btn { text-align: center; margin-bottom: 92px; }
 
