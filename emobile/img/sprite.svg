@@ -8,4 +8,12 @@
 			<path fill="#FFF" d="M8 0l2.5 2.5L5 8l5.5 5.5L8 16 0 8z"></path>
 		</symbol>
 	
+		<symbol id="star-empty" viewBox="0 0 20 19">
+			<style>.st0{enable-background:new}</style><defs><path id="SVGID_1_" class="st0" d="M18.9 6.5c-.3-.6-1.7-.6-1.7-.6h-4.4l-2-4.5S10 0 9.3 0c-.6 0-1.2 1.4-1.2 1.4L6.3 5.7l-4 .3S1 5.5.4 6.3c-.4.5.3 2 .3 2l3.8 3.3L3 17s-.2 1.5.3 1.9c.5.3 1.7-.4 1.7-.4l4.6-3.2 4.3 3.2s1.4.5 1.9.1c.4-.4.1-1.8.1-1.8l-1.2-5.6L18.4 8c0 .1.8-.9.5-1.5z"></path></defs><clipPath id="SVGID_2_"><use xlink:href="#SVGID_1_" overflow="visible"></use></clipPath><image width="20" height="19" id="_x30_1_копия_3_xA0_Изображение" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAIAAAAf7rriAAAACXBIWXMAAAsSAAALEgHS3X78AAAA GXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAB9JREFUeNpifPHiJQO5gImBAjCq eVTzqOZRzWAAEGAAqVwC381xSqMAAAAASUVORK5CYII=" overflow="visible" clip-path="url(#SVGID_2_)"></image>
+		</symbol>
+	
+		<symbol id="star-full" viewBox="0 0 33 32">
+			<style>.st0{enable-background:new}</style><defs><path id="SVGID_1_" class="st0" d="M32.7 11.1c-.5-1-2.9-1-2.9-1h-7.4L19 2.6S17.6.3 16.4.3c-1.2 0-2.3 2.3-2.3 2.3l-2.9 7.3-6.8.3s-2.2-.8-3.2.5c-.7.9.4 3.3.4 3.3l6.5 5.6-2.6 8.9s-.3 2.5.4 3.1c.9.7 2.9-.4 2.9-.4l7.9-5.4 7.4 5.4s2.3.9 3.2.1c.8-.6.1-3 .1-3L25.3 19l6.3-5.3c.2.1 1.6-1.5 1.1-2.6z"></path></defs><clipPath id="SVGID_2_"><use xlink:href="#SVGID_1_" overflow="visible"></use></clipPath><image width="33" height="32" id="_x30_1_xA0_Изображение" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAgCAIAAAAT2oadAAAACXBIWXMAAAsSAAALEgHS3X78AAAA GXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAADBJREFUeNrszUEJAEAIADC9Tvav YCHhUgg+tgLL6YplL/Y5HA6Hw+FwOByO+8cXYACzygJCZ4h8yQAAAABJRU5ErkJggg==" overflow="visible" clip-path="url(#SVGID_2_)"></image>
+		</symbol>
+	
 </svg>
