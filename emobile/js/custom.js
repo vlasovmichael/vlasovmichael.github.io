@@ -10,6 +10,20 @@ $(".js-modal").fancybox({
     touch: false
 });
 
+// scroll to top
+$(window).scroll(function(){
+    var el = $('.js-arrow-up');
+    if ($(this).scrollTop() > 400) {
+        el.addClass('is-visible');
+    } else {
+        el.removeClass('is-visible');
+    }
+});
+
+$('.js-arrow-up').click(function(){
+    $("html, body").animate({ scrollTop: 0 }, 600);
+});
+
 // filter
 $('.js-filter-text').click(function(){
 	var el = $(this);
@@ -59,8 +73,8 @@ $('.rating a').on('mouseout', function() {
 $('.rating a').on('click', function() {
     var el = $(this);
     el.addClass('check').siblings().removeClass('check');
-    $(this).parents('.item-raitng').find('input[name=rating]').val(el.attr('data-attr'));
-    el.parent('.rating').find('input[type=hidden]').val(el.attr('data-attr'));
+    $('.rating-result').find('input[name=rating]').val(el.attr('data-attr'));
+    $('.rating-result').find('input[type=hidden]').val(el.attr('data-attr'));
 });
 
 // tabs
@@ -132,7 +146,6 @@ $('.js-catalog-item-main').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
-    fade: true,
     infinite: true,
     adaptiveHeight: true,
     asNavFor: '.js-catalog-item-thumbs'
@@ -173,6 +186,55 @@ $('.js-catalog-item-thumbs').slick({
         }
     ]
 });
+
+// current slick slick color click item
+$(".filter-radio__item").on('click', function(){
+  var slideIndex = $(this).index();
+  var slider = $( '.js-catalog-item-main' );
+
+  slider[0].slick.slickGoTo(parseInt(slideIndex));
+});
+
+// masked input
+$(".js-masked-input").mask("+7(999) 999-99-99");
+
+// pop up form
+$(".js-popupForm").submit(function(e) {
+    $.ajax({
+        type: "POST",
+        url: "mail.php",
+        data: $(this).serialize()
+    }).done(function() {
+    $(this).find("input").val("");
+    parent.$.fancybox.close();
+    $('#mymodal').show();
+    setTimeout(function(){
+        $('#mymodal').fadeOut('fast')},3000);
+        $(".js-popupForm").trigger("reset");
+    });
+    e.preventDefault();
+});
+
+// catalog mobile
+function catalogMobile(){
+    var width = $(window).width(); 
+    if (width < 1023) {
+        
+        $('.nav-list__item').each(function() {
+            if ($(this).children('.nav-list-dropdown').length){
+                $(this).addClass('has-content');
+            }
+        });
+    }
+};
+
+$('.nav-list__item > i').on('click', function(){
+
+    $('.nav-list-dropdown').slideToggle();
+});
+
+catalogMobile();
+$(window).on('debouncedresize', catalogMobile);
 
 // range slider
 var html5Slider = document.getElementById('range-slider');
