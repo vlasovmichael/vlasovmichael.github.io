@@ -637,7 +637,7 @@ h4 { font-size: 26px; line-height: 30px; font-weight: 600; color: #333333; margi
 
 .head-phone__text { font-weight: 300; font-size: 13px; line-height: 16px; min-height: 11px; }
 
-.header-mobile-menu { width: 30px; border: 0; padding: 0; outline: none; background-color: transparent; }
+.header-mobile-menu { width: 30px; border: 0; padding: 0; outline: none; background-color: transparent; display: none; }
 
 .header-mobile-menu span { display: block; height: 3px; background-color: #333; -webkit-border-radius: 3px; border-radius: 3px; margin-bottom: 5px; -webkit-transition: all 250ms ease; -o-transition: all 250ms ease; transition: all 250ms ease; }
 
@@ -1130,7 +1130,8 @@ h4 { font-size: 26px; line-height: 30px; font-weight: 600; color: #333333; margi
   .video-section-list p { font-size: 15px; line-height: 20px; }
   .card-product .client-issues-list { padding: 0; }
   .installment-plan { padding: 20px 0; }
-  .installment-plan__link a { margin-left: 0; } }
+  .installment-plan__link a { margin-left: 0; }
+  .header-mobile-menu { display: block; } }
 
 @media screen and (max-width: 520px) { .home-page__image img { width: 100%; } }
 
