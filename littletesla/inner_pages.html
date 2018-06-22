@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Index</title>
+	<link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,600,700,800&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css" />		
+</head>
+<body class="card-product">
+
+	<div class="out">
+		<!-- begin header -->
+		<header class="header">
+	<div class="wrapper">
+		<div class="header__container">
+			<button class="header-mobile-menu js-head-mobile-menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+			<div class="header__logo"><a href=""></a></div>
+			<nav class="head-nav js-head-nav">
+				<ul class="head-nav-list">
+					<li class="head-nav-list__item">
+						<a class="head-nav-list__link" href="">Главная</a>
+					</li>
+					<li class="head-nav-list__item">
+						<a class="head-nav-list__link" href="">Каталог</a>
+					</li>
+					<li class="head-nav-list__item">
+						<a class="head-nav-list__link" href="">О нас</a>
+					</li>
+					<li class="head-nav-list__item">
+						<a class="head-nav-list__link" href="">Доставка и оплата</a>
+					</li>
+					<li class="head-nav-list__item">
+						<a class="head-nav-list__link" href="">Контакты</a>
+					</li>
+					<li class="head-nav-list__item">
+						<a class="head-nav-list__link" href="">Блог</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="header__info head-phone">
+				<div class="head-phone__phone">
+					<svg class="svg-icon">
+		                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../img/sprite.svg#telephone-symbol-button"></use>
+		            </svg>
+					<span>8(800)350-24-25</span>
+				</div>
+				<div class="head-phone__text">Бесплатный звонок по России</div>
+			</div>
+		</div>
+	</div>
+</header>
+		<!-- end header -->
+		<!-- begin content -->
+		
+<div class="content">
+	<div class="wrapper">
+		<ol class="all-pages">
+			<li><a href="index.html">Index</a></li>
+			<li><a href="inner_catalog.html">Catalog</a></li>
+			<li><a href="inner_card-product.html">Item</a></li>
+		</ol>
+	</div>
+</div>
+
+		<!-- end content -->
+		<!-- begin footer -->
+		<footer class="footer">
+	<div class="wrapper">
+		<div class="footer__container">
+			<div class="footer__col">
+				<div class="footer__social">
+					<span>Мы в социальных сетях:</span>
+					<ul>
+						<li>
+							<a href="">
+								<svg class="svg-icon">
+					                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../img/sprite.svg#instagram-logo"></use>
+					            </svg>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="../img/icon_poster_u15885.png" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<svg class="svg-icon">
+					                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../img/sprite.svg#youtube-play-button"></use>
+					            </svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__link">
+					<a href="">Политика конфиденциальности</a>
+				</div>
+			</div>
+			<div class="footer__col">
+				<div class="footer__link">
+					<a href="">Договор публичной оферты</a>
+				</div>
+				<div class="footer__text">
+					Адрес
+				</div>
+			</div>
+			<button class="footer__top js-arrow-up">
+				<svg class="svg-icon">
+	                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../img/sprite.svg#arrow-up"></use>
+	            </svg>
+			</button>
+		</div>
+	</div>
+</footer>
+		<!-- end footer -->	
+	</div>
+	<!-- call -->
+<div class="popup" id="popup-call">
+	<div class="popup__content">
+		<h4>Отправьте заявку на <br> электромобиль</h4>
+		<form class="js-popupForm">
+			<div class="contact-us-form">
+				<div class="contact-us-form__item">
+					<input class="contact-us-form__input" type="text" name="name" placeholder="ваше имя" required>
+				</div>
+				<div class="contact-us-form__item">
+					<input class="contact-us-form__input js-masked-input" type="tel" name="phone" placeholder="ваш контактный телефон" required>
+				</div>
+				<div class="contact-us-form__item">
+					<input class="contact-us-form__input" type="email" name="email" placeholder="ваш e-mail" required>
+				</div>
+				<div class="contact-us-form__btn">
+					<button class="contact-us-form__button">заказать электромобиль</button>
+				</div>
+			</div>
+		</form>
+		<div class="popup__text">
+			<span>*</span>
+			Менеджер свяжется с Вами в течение 15 минут
+		</div>
+	</div>
+</div>
+<!-- begin pop up after form -->
+<div id="mymodal">
+	<span>Ваша заявка отправлена,<br>с Вами скоро свяжутся</span>
+</div>
+<!-- end pop up after form -->
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/jquery.fancybox.min.js"></script>
+	<script src="js/select2.full.min.js"></script>
+	<script src="js/jquery.masked.input.min.js"></script>
+	<script src="js/custom.js"></script>
+</body>
+</html>
