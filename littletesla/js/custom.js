@@ -10,6 +10,16 @@ $(".js-modal").fancybox({
     touch: false
 });
 
+// anchor
+$('.js-anchor').on('click', function(event) {
+    var elementClick = $(this).attr("href")
+    var destination = $(elementClick).offset().top - 100;
+    $("html:not(:animated),body:not(:animated)").animate({
+        scrollTop: destination
+    }, 800);
+    event.preventDefault();
+});
+
 // mobile menu
 $('.js-head-mobile-menu').on('click', function(){
     $(this).toggleClass('is-active');
