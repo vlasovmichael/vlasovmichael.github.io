@@ -11,6 +11,33 @@ $(document).on('click touchstart', function(event) {
     }
 });
 
+// select2
+$('.js-select2[multiple]').select2({
+    width: '100%',
+    placeholder: $(this).data('placeholder'),
+    allowClear: true,
+    closeOnSelect: false
+});
+
+$('.js-select2[multiple]').on('change', function() {
+    var el = $(this);
+    function isPositive(number) {
+        return number == 'all';
+    }
+    el.val().length ? el.addClass('selected') : el.removeClass('selected');
+    if(el.hasClass('is-set-all') && el.val().length > 1) {
+        el.removeClass('is-set-all');
+        var arr = el.val();
+        arr.shift();
+        console.log(arr);
+        el.val(arr);
+    } else if(el.val().some(isPositive)) {
+        el.addClass('is-set-all');
+        el.val(['all']);
+    }
+    el.trigger('change.select2');
+});
+
 // another date aside
 $('.js-aside-date-btn').on('click', function(){
     var btn = $('.js-aside-date-btn');
