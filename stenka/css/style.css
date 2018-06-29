@@ -1,0 +1,123 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+ul li { list-style: none; }
+
+img { max-height: 100%; }
+
+body { background: #FFFFFF; font-family: 'Open Sans', sans-serif; font-weight: 400; font-size: 14px; }
+
+.out { min-width: 320px; overflow: hidden; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; min-height: 100vh; }
+
+.wrapper { max-width: 1180px; margin: auto; padding: 0 20px; }
+
+.content { -webkit-box-flex: 1; -webkit-flex: 1 0 auto; -ms-flex: 1 0 auto; flex: 1 0 auto; }
+
+.footer { -webkit-box-flex: 0; -webkit-flex: 0 0 auto; -ms-flex: 0 0 auto; flex: 0 0 auto; }
+
+table { width: 100%; border-collapse: collapse; }
+
+.index-about { padding: 40px 0; }
+
+.index-about__container { max-width: 860px; margin: 0 auto; }
+
+.index-about p { font-size: 16px; color: #222222; line-height: 28px; }
+
+.index-about__link { margin: 30px 0 15px; display: inline-block; position: relative; padding-right: 20px; }
+
+.index-about__link span { font-size: 16px; color: #e05745; letter-spacing: 1px; padding-bottom: 1px; font-weight: 700; border-bottom: 1px dashed #e05745; }
+
+.index-about__link:before { content: ''; display: block; position: absolute; width: 10px; height: 6px; right: 0; top: 9px; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath fill='%23e05745' id='arrow' class='cls-1' d='M384.1,743l-1.1,1.086L388,749l5-4.918L391.9,743l-3.9,3.847Z' transform='translate%28-383 -743%29' /%3E%3C/svg%3E"); background-repeat: no-repeat; -webkit-transition: all 200ms ease; -o-transition: all 200ms ease; transition: all 200ms ease; }
+
+.index-about__link:hover { text-decoration: none; color: #e05745; }
+
+.index-about__link:hover span { border-bottom: 1px dashed transparent; }
+
+.index-about__link:focus { text-decoration: none; }
+
+.about-school { padding: 40px 0; }
+
+.about-school__icon { margin-bottom: 15px; }
+
+.about-school__icon .svg-icon { fill: #e05745; height: 80px; width: 80px; }
+
+.about-school__title { font-weight: 700; color: #222222; font-size: 16px; margin-bottom: 15px; }
+
+.about-school p { color: #222222; font-size: 14px; line-height: 22px; }
+
+.about-school .col-xs-12 { margin-bottom: 20px; }
+
+.index-schedule { padding: 40px 0 80px; }
+
+.index-schedule__underground { margin-top: 15px; }
+
+.index-schedule__underground .svg-icon { width: 16px; height: 11px; fill: #ff4b33; display: inline-block; margin-right: 10px; }
+
+.index-schedule__time { font-size: 16px; display: block; margin-bottom: 15px; }
+
+.index-schedule__time:last-child { margin-bottom: 0; }
+
+.index-schedule__time i { font-style: normal; color: #888888; display: block; font-size: 13px; line-height: 1.5; }
+
+.index-schedule tr td { padding: 15px; background-color: #f7f7f7; color: #222222; font-size: 13px; border: 2px solid #FFF; }
+
+.index-schedule tr td:first-child { background-color: #f1f1f1; }
+
+.index-schedule tr td:first-child:hover { background-color: #f1f1f1; }
+
+.index-schedule tr td:hover { background-color: #fefefe; }
+
+.index-schedule tr th { padding: 15px; color: #222222; font-size: 13px; }
+
+@media screen and (max-width: 991px) { .index-schedule-table { width: 991px; }
+  .index-schedule-table-wrapper { overflow-y: scroll; } }
+
+@media screen and (max-width: 767px) { .index-about { padding: 25px 0; }
+  .index-about p { font-size: 14px; line-height: 18px; }
+  .index-about__link { margin: 15px 0; }
+  .about-school { padding: 25px 0; }
+  .index-schedule { padding: 25px 0; } }
+
+/*# sourceMappingURL=../maps/style.css.map */
