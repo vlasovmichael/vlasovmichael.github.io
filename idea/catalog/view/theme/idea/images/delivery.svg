@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="90" height="44" viewBox="0 0 90 44">
+  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""/>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+<?xpacket end="w"?></metadata>
+<defs>
+    <style>
+      .cls-1 {
+        fill: #a1b925;
+        fill-rule: evenodd;
+        filter: url(#filter);
+      }
+    </style>
+    <filter id="filter" x="1576" y="618" width="90" height="44" filterUnits="userSpaceOnUse">
+      <feGaussianBlur result="blur" in="SourceAlpha"/>
+      <feFlood result="flood" flood-opacity="0.15"/>
+      <feComposite result="composite" operator="out" in2="blur"/>
+      <feOffset result="offset" dy="2"/>
+      <feComposite result="composite-2" operator="in" in2="SourceAlpha"/>
+      <feBlend result="blend" mode="multiply" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <path class="cls-1" d="M1662.5,639.885l-9.9-2.392-7.08-7.075c-1.2-1.2-2.64-2.633-3.2-3.19a3.83,3.83,0,0,0-2.36-1.011h-9.32a3.086,3.086,0,0,0-3.08,3.082v22.539a3.6,3.6,0,0,0,3.6,3.6h11.25a9.145,9.145,0,0,1,18.29,0h1.7a3.608,3.608,0,0,0,3.6-3.6v-7.512A4.818,4.818,0,0,0,1662.5,639.885Zm-28.75-8.745h5.6a1.234,1.234,0,0,1,.72.331c0.18,0.181,1.14,1.147,2.14,2.144l5.31,5.3c1,1,.66,1.816-0.76,1.816h-13.01a1.052,1.052,0,0,1-1.05-1.05v-7.5a1.034,1.034,0,0,1,.41-0.824A1.073,1.073,0,0,1,1633.75,631.14ZM1621.13,618H1579.6a3.608,3.608,0,0,0-3.6,3.6v30.245a3.608,3.608,0,0,0,3.6,3.6h1.48a9.145,9.145,0,0,1,18.29,0h21.76a3.608,3.608,0,0,0,3.6-3.6V621.594A3.608,3.608,0,0,0,1621.13,618Zm30.42,30.87a6.566,6.566,0,1,0,6.58,6.567A6.567,6.567,0,0,0,1651.55,648.868Zm0,9.85a3.283,3.283,0,1,1,3.29-3.283A3.293,3.293,0,0,1,1651.55,658.718Zm-61.32-9.848a6.565,6.565,0,1,0,6.57,6.564A6.573,6.573,0,0,0,1590.23,648.87Zm0,9.848a3.283,3.283,0,1,1,3.28-3.283A3.287,3.287,0,0,1,1590.23,658.718Z" transform="translate(-1576 -618)"/>
+</svg>
