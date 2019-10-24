@@ -38,10 +38,10 @@ clipbordEl.addEventListener('click', () => {
     textarea.remove();
 });
 
-function generatePassword(lower, upper, number, symbol, length) {
+function generatePassword(upper, lower, number, symbol, length) {
     let generatedPassword = '';
-    const typesCount = lower + upper + number + symbol;
-    const typesArr = [{ lower }, { upper }, { number }, { symbol }].filter(item => Object.values(item)[0]);
+    const typesCount = upper + lower + number + symbol;
+    const typesArr = [{ upper }, { lower }, { number }, { symbol }].filter(item => Object.values(item)[0]);
 
     if (typesCount === 0) {
         return '';
@@ -67,7 +67,7 @@ function getRandomUpper() {
 }
 
 function getRandomNumber() {
-    return String.fromCharCode(Math.floor(Math.random() * 26) + 48);
+    return +String.fromCharCode(Math.floor(Math.random() * 10) + 48);
 }
 
 function getRandomSymbol() {
