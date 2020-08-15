@@ -7,7 +7,6 @@ const symbolsEl = document.querySelector('.main-form-options-list__symbols');
 const generateEl = document.querySelector('.main-form__btn');
 const clipbordEl = document.querySelector('.main-form_result__copy');
 const copy = document.querySelector('.js-copy');
-const tooltip = document.querySelector('.js-tooltip');
 
 const randomFunc = {
     lower: getRandomLower,
@@ -41,12 +40,12 @@ clipbordEl.addEventListener('click', () => {
 });
 
 copy.addEventListener('click', () => {
-    if (!resultEl.innerHTML) return;
-    
     const copyText = 'is-copied';
-    tooltip.classList.add(copyText);
+
+    if (!resultEl.innerHTML) return;
+    document.body.classList.add(copyText);
     setTimeout(() => {
-        tooltip.classList.remove(copyText);
+        document.body.classList.remove(copyText);
     }, 3000);
 });
 
