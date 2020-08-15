@@ -41,9 +41,12 @@ clipbordEl.addEventListener('click', () => {
 });
 
 copy.addEventListener('click', () => {
-    tooltip.classList.add('is-copied');
-    setTimeout(function() {
-        tooltip.classList.remove('is-copied');
+    if (!resultEl.innerHTML) return;
+    
+    const copyText = 'is-copied';
+    tooltip.classList.add(copyText);
+    setTimeout(() => {
+        tooltip.classList.remove(copyText);
     }, 3000);
 });
 
