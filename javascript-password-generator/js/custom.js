@@ -6,6 +6,8 @@ const numberEl = document.querySelector('.main-form-options-list__numbers');
 const symbolsEl = document.querySelector('.main-form-options-list__symbols');
 const generateEl = document.querySelector('.main-form__btn');
 const clipbordEl = document.querySelector('.main-form_result__copy');
+const copy = document.querySelector('.js-copy');
+const tooltip = document.querySelector('.js-tooltip');
 
 const randomFunc = {
     lower: getRandomLower,
@@ -36,6 +38,13 @@ clipbordEl.addEventListener('click', () => {
     textarea.select();
     document.execCommand('copy');
     textarea.remove();
+});
+
+copy.addEventListener('click', () => {
+    tooltip.classList.add('is-copied');
+    setTimeout(function() {
+        tooltip.classList.remove('is-copied');
+    }, 3000);
 });
 
 function generatePassword(upper, lower, number, symbol, length) {
