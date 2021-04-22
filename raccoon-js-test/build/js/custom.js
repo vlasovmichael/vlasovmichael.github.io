@@ -1,18 +1,12 @@
 // Переменные и выражения
 
-// Напишите в переменных формулу для расчета з/п за июль с учетом, 
+// 4 Напишите в переменных формулу для расчета з/п за июль с учетом, 
 // что количество рабочий часов, количество рабочих дней в неделе и рейт за час – переменные значения и читаются из prompt.
 
-// Напишите программу, которая без использования оператора сравнения определяет, 
+// 5 Напишите программу, которая без использования оператора сравнения определяет, 
 // является ли число, введенное пользователем, нечётным.
 
-// Напишите программу, которая проверяет, является ли значение, введенное пользователем, числом.
-
-// Запишите в переменную случайное число (Math.random()), умножьте его на 100 и округлите. 
-// Получите второе число из окна prompt. Сравните и отобразите в модальном окне: первое число меньше второго или нет, 
-// а также оба значения.
-
-// Создайте переменную str и запишите в нее из prompt такое предложение «Мне нравится изучать Front-end».
+// 8 Создайте переменную str и запишите в нее из prompt такое предложение «Мне нравится изучать Front-end».
 // Также создайте еще одну переменную и запишите в нее из prompt то, что вам нравится изучать.
 // С помощью методов строки определите существует ли то что вам нравится изучать в исходной строке str.
 // Также возьмите подстроку «Мне нравится изучать » из исходной переменной str сохраните ее в переменной.
@@ -20,17 +14,28 @@
 // и то что вам нравится изучать (примените для этого обратные кавычки ` `). Отобразите результат в модальном окне.
 
 const first = document.querySelector('.first');
+
 const second = document.querySelector('.second');
 const secondBtn = second.querySelector('button');
 const secondResult = second.querySelector('div');
+
 const third = document.querySelector('.third');
 const thirdBtn = third.querySelector('button');
+
 const fouth = document.querySelector('.fouth');
+
 const fifth = document.querySelector('.fifth');
+const fifthInput = fifth.querySelector('input');
+const fifthResult = fifth.querySelector('div');
+
 const sixth = document.querySelector('.sixth');
 const sixthInput = sixth.querySelector('input');
 const sixthResult = sixth.querySelector('div');
+const sixthLiveInput = sixth.querySelector('input[name="number"]');
+const sixthLiveResult = sixth.querySelector('span');
+
 const seventh = document.querySelector('.seventh');
+const seventhBtn = seventh.querySelector('button');
 
 // 1
 
@@ -109,6 +114,18 @@ thirdBtn.addEventListener('click', () => {
 
 // 4
 
+// 5
+
+fifthInput.addEventListener('input', (e) => {
+    const value = parseInt(e.target.value);
+
+    if (value % 2) {
+        fifthResult.textContent = 'нечетное';
+    } else {
+        fifthResult.textContent = 'четное';
+    }
+});
+
 // 6
 
 sixth.querySelector('form').addEventListener('submit', (e) => {
@@ -124,4 +141,40 @@ sixth.querySelector('form').addEventListener('submit', (e) => {
     }
 });
 
+sixthLiveInput.addEventListener('input', (e) => {
+    const regex = /\d/g;
 
+    if (e.target.value.match(regex)) {
+        sixthLiveResult.textContent = 'да, все верно, тут число';
+    } else if (e.target.value == '') {
+        sixthLiveResult.textContent = '';
+    } else {
+        sixthLiveResult.textContent = 'эээ куда, текст нельзя';
+    }
+});
+
+// 7
+
+seventhBtn.addEventListener('click', () => {
+    const randomVal = Math.round(Math.random() * 101);
+    const userVal = parseInt(prompt('Напиши любое число'));
+    const result = randomVal < userVal;
+    
+    if (result) {
+        alert(
+            `
+            Твое число больше случайного.
+            Случайное число: ${randomVal}
+            Твое число: ${userVal}
+            `
+        );
+    } else {
+        alert(
+            `
+            Твое число меньше случайного.
+            Случайное число: ${randomVal}
+            Твое число: ${userVal}
+            `
+        );
+    }
+});
