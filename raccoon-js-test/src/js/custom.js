@@ -1,10 +1,5 @@
-// Переменные и выражения
-
 // 4 Напишите в переменных формулу для расчета з/п за июль с учетом, 
 // что количество рабочий часов, количество рабочих дней в неделе и рейт за час – переменные значения и читаются из prompt.
-
-// 5 Напишите программу, которая без использования оператора сравнения определяет, 
-// является ли число, введенное пользователем, нечётным.
 
 // 8 Создайте переменную str и запишите в нее из prompt такое предложение «Мне нравится изучать Front-end».
 // Также создайте еще одну переменную и запишите в нее из prompt то, что вам нравится изучать.
@@ -23,6 +18,7 @@ const third = document.querySelector('.third');
 const thirdBtn = third.querySelector('button');
 
 const fouth = document.querySelector('.fouth');
+const fouthBtn = fouth.querySelector('button');
 
 const fifth = document.querySelector('.fifth');
 const fifthInput = fifth.querySelector('input');
@@ -113,6 +109,23 @@ thirdBtn.addEventListener('click', () => {
 });
 
 // 4
+
+let [workingHours, workingDays, workingRate, workingResult] = [];
+
+fouthBtn.addEventListener('click', () => {
+    workingHours = parseInt(prompt('Сколько часов ты в среднем ты работаешь?', 8));
+    workingDays = parseInt(prompt('Сколько всего рабочих дней ты работал', 20));
+    workingRate = parseInt(prompt('Какой твой рейт'));
+    
+    workingResult = (workingHours * workingDays) * workingRate;
+
+    alert(`
+        Ты трудился в среднем по ${workingHours} часов в день
+        в этом месяце ты проработал ${workingDays} дней
+        твой рейт составляет ${workingRate}
+        и ты получишь ${workingResult} $ в этом месяце
+    `);
+});
 
 // 5
 
