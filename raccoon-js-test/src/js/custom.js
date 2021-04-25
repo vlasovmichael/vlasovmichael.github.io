@@ -1,13 +1,3 @@
-// 4 Напишите в переменных формулу для расчета з/п за июль с учетом, 
-// что количество рабочий часов, количество рабочих дней в неделе и рейт за час – переменные значения и читаются из prompt.
-
-// 8 Создайте переменную str и запишите в нее из prompt такое предложение «Мне нравится изучать Front-end».
-// Также создайте еще одну переменную и запишите в нее из prompt то, что вам нравится изучать.
-// С помощью методов строки определите существует ли то что вам нравится изучать в исходной строке str.
-// Также возьмите подстроку «Мне нравится изучать » из исходной переменной str сохраните ее в переменной.
-// Создайте еще одну переменную result куда запишите результирующую строку объединяющую «Мне нравится изучать » 
-// и то что вам нравится изучать (примените для этого обратные кавычки ` `). Отобразите результат в модальном окне.
-
 const first = document.querySelector('.first');
 
 const second = document.querySelector('.second');
@@ -32,6 +22,9 @@ const sixthLiveResult = sixth.querySelector('span');
 
 const seventh = document.querySelector('.seventh');
 const seventhBtn = seventh.querySelector('button');
+
+const eighth = document.querySelector('.eighth');
+const eighthBtn = eighth.querySelector('button');
 
 // 1
 
@@ -115,7 +108,7 @@ let [workingHours, workingDays, workingRate, workingResult] = [];
 fouthBtn.addEventListener('click', () => {
     workingHours = parseInt(prompt('Сколько часов ты в среднем ты работаешь?', 8));
     workingDays = parseInt(prompt('Сколько всего рабочих дней ты работал', 20));
-    workingRate = parseInt(prompt('Какой твой рейт'));
+    workingRate = parseFloat(prompt('Какой твой рейт'));
     
     workingResult = (workingHours * workingDays) * workingRate;
 
@@ -172,6 +165,11 @@ seventhBtn.addEventListener('click', () => {
     const randomVal = Math.round(Math.random() * 101);
     const userVal = parseInt(prompt('Напиши любое число'));
     const result = randomVal < userVal;
+
+    if (userVal > 100) {
+        alert('Слишком большое значение, попробуй еще раз');
+        return;
+    }
     
     if (result) {
         alert(
@@ -181,6 +179,8 @@ seventhBtn.addEventListener('click', () => {
             Твое число: ${userVal}
             `
         );
+    } else if (userVal < 0) {
+        alert('Слишком маленькое значение, попробуй еще раз');
     } else {
         alert(
             `
@@ -190,4 +190,23 @@ seventhBtn.addEventListener('click', () => {
             `
         );
     }
+});
+
+// 8
+
+let [str, myStr, includeSubStr, strResult, myStrResult] = [];
+
+eighthBtn.addEventListener('click', () => {
+    str = prompt('Мне нравится изучать Front-end', 'Мне нравится изучать Front-end');
+    myStr = prompt('Напиши, что тебе нравится изучать', 'Мне нравится изучать JS');
+
+    includeSubStr = myStr.includes(str);
+    strResult = str.slice(0, 21);
+    myStrResult = myStr.slice(21);
+
+    if (!includeSubStr) {
+        alert('Ой, кажется вам не нравится изучать Front-end');
+    }
+
+    alert(`${strResult} ${myStrResult}`);
 });
