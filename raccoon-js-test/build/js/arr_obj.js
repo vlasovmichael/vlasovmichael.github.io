@@ -126,13 +126,10 @@ for (let i = 1; i < 11; i++) {
 // console.log(arr);
 
 // 11
-const fragment = document.createDocumentFragment();
 const img = document.createElement('img');
-img.src = 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fizi.ua%2Fp-10775461-chyornaya-devochka-labradora&psig=AOvVaw3DvKpuH9PrTrpGa2fenSw8&ust=1622532381350000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNC8gdKy8_ACFQAAAAAdAAAAABAJ';
-img.alt = 'labrador';
-img.width = 300;
-img.height = 450;
+img.src = 'https://www.google.com.ua/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png'
+img.alt = 'google';
+img.width = 272;
+img.height = 92;
 img.style.border = '1px solid #eee';
-// img.crossOrigin = 'Anonymous';
-fragment.append(img);
-tenth.append(fragment);
+tenth.append(img);
