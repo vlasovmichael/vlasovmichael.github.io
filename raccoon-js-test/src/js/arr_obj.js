@@ -13,14 +13,14 @@ const fouthBtn = fouth.querySelector('button');
 const fifth = document.querySelector('.fifth');
 const fifthBtn = fifth.querySelector('button');
 
-// const sixth = document.querySelector('.sixth');
-// const sixthResult = sixth.querySelector('span');
+const sixth = document.querySelector('.sixth');
+const sixthBtbn = sixth.querySelector('button');
 
-// const seventh = document.querySelector('.seventh');
-// const seventhBtn = seventh.querySelector('button');
+const seventh = document.querySelector('.seventh');
+const seventhBtn = seventh.querySelector('button');
 
-// const eighth = document.querySelector('.eighth');
-// const eighthBtn = eighth.querySelector('button');
+const eighth = document.querySelector('.eighth');
+const eighthBtn = eighth.querySelector('button');
 
 const ninth = document.querySelector('.ninth');
 const ninthBtn = ninth.querySelector('button');
@@ -82,24 +82,25 @@ fouthBtn.addEventListener('click', () => {
         ? arr
         : (arr.splice(to, 0, ...arr.splice(from, 1)), arr);
     const res = move(6, 4, ...array);
+
     alert(res.join(' '));
 });
 
 // 5
 
+let persone = {
+    name: 'Oleg',
+    age: 18,
+};
+
 fifthBtn.addEventListener('click', () => {
-    let persone = {
-        name: 'Oleg',
-        age: 18,
-    };
-    let userAnswer = prompt('Введите свойство');
+    let userAnswer = prompt('Введите ключ');
     let result = userAnswer in persone;
 
     if (result) {
-        alert(`Свойство ${userAnswer} существует`);
+        alert(`Ключ ${userAnswer} существует`);
     } else {
-        alert(`Свойства ${userAnswer} нет в объекте, добавьте новое значение`);
-
+        alert(`Ключа ${userAnswer} нет в объекте, добавьте новое значение`);
         let newValue = prompt('Значение');
         persone[userAnswer] = newValue;
     }
@@ -107,25 +108,73 @@ fifthBtn.addEventListener('click', () => {
     alert(JSON.stringify(persone));
 });
 
-// Создайте ассоциативный массив person, описывающий персону, 
-// с произвольным количеством произвольных полей. 
-// С помощью оператора in или typeof проверьте наличие в объекте свойства, 
-// прочитанного из prompt, и выведите его на экран. 
-// Если свойства нет, то добавляйте его в объект со значением, которое также запрашивается из prompt.
+// 6
 
-let arr = [];
-for (let i = 1; i < 11; i++) {
-    arr.push(i);
+let phone = {
+    brand: null,
+    model: null,
+    color: null
+};
 
-    for (let j = 1; j < 11; j++) {
-        let newArr = i * j;
-
-        arr.push(newArr);
+sixthBtbn.addEventListener('click', () => {
+    for (key in phone) {
+        let userAnswer = prompt(`Введите ${key} телефона`);
+        phone[key] = userAnswer;
     }
-}
-// console.log(arr);
+        
+    Object.assign(persone, phone);
 
-// 11
+    sixth.append(JSON.stringify(Object.assign(persone, phone)));
+});
+
+// 7
+
+seventhBtn.addEventListener('click', () => {
+    const dates = {
+        current: new Date().toDateString(),
+        oneYearFromNow: new Date(new Date().setFullYear(new Date().getFullYear() - 1)).toDateString()
+    };
+    const userAnswer = new Date(prompt('Введите дату в форммате yyyy-MM-dd')).toDateString();
+
+    userAnswer <= dates.current && userAnswer >= dates.oneYearFromNow ? alert('Все верно!') : alert('Не верно!');
+});
+
+// 8
+
+eighthBtn.addEventListener('click', () => {
+    let [i = 0, arr = [], userAnswer] = [];
+
+    do {
+        userAnswer = prompt('Введите любое значение');
+        arr.push(userAnswer);
+        i++;
+    } while (userAnswer);
+
+    alert(`
+        Сумма всех чисел массива: ${i - 1}
+        ${arr.join(' ')}
+    `);
+});
+
+// 9
+
+ninthBtn.addEventListener('click', () => {
+    let arr = [];
+
+    for (let i = 1; i < 11; i++) {
+        arr[i - 1] = [];
+    
+        for (let j = 1; j < 11; j++) {
+            arr[i - 1].push(`${i}*${j} = ${i * j}`);
+        }
+    }
+
+    alert('Result in the console');
+    console.log(arr);
+});
+
+// 10
+
 const img = document.createElement('img');
 img.src = 'https://www.google.com.ua/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png'
 img.alt = 'google';
